@@ -1,0 +1,46 @@
+ div {
+    bottom: 80px;
+    top: 120;
+ }
+.image-container {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 14, 212, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+   
+  }
+  
+  img {
+    max-width: 45%;
+    height: auto;
+    float: left;
+  }
+  
+  .text-container {
+    padding: 20px;
+    max-width: 50%;
+    float: right;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  body {
+    background: linear-gradient(to bottom, rgba(127, 127, 247, 0.6), rgba(255, 255, 255, 0.89));
+
+
+  
+    
+ 
+  }
+  
