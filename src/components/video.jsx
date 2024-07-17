@@ -24,21 +24,11 @@ export const Video = () => {
     <div className="play-button-container">
       {/* Imagen */}
       {isVisible && (
-        <div
-          style={{
-            position: "relative",
-            top: "-120px",
-            borderRadius: "60px",
-          }}
-          className="imagen-video"
-        >
-          <img src={odoontolos} alt="Imagen" className="imagen-video-imagen" />
-          <div
-     
-        className="banner-text"
-          >
-            PROMOCIÓN
+        <div className="imagen-video-container">
+          <div className="imagen-video">
+            <img src={odoontolos} alt="Imagen" />
           </div>
+          <div className="banner-text">PROMOCIÓN</div>
           {!isPlaying && (
             // biome-ignore lint/a11y/useButtonType: <explanation>
             <button
@@ -52,7 +42,6 @@ export const Video = () => {
                 zIndex: 999, // Asegura que el botón esté encima de la imagen
               }}
             >
-              {/* SVG del botón de reproducción */}
               {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
               <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="30" cy="30" r="30" fill="#FFFFFF" />
@@ -72,7 +61,7 @@ export const Video = () => {
       {/* Video */}
       {/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
       <video
-        className="video"
+        className="video-final"
         autoPlay
         controls
         loop={true}
@@ -81,8 +70,7 @@ export const Video = () => {
         style={{
           width: "450px",
           borderRadius: "40px",
-          // Oculta el video si no está reproduciéndose
-          display: isPlaying ? "block" : "none",
+          display: isPlaying ? "block" : "none", // Oculta el video si no está reproduciéndose
         }}
       />
     </div>

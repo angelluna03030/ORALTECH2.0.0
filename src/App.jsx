@@ -76,6 +76,7 @@ const App = () => {
         titulo="UBICACION"
         link="https://api.whatsapp.com/send?phone=573224130747&text=Hola, quisiera saber información sobre."
       />
+      
       <Iconos />
       <Sonrisa />
     </>
