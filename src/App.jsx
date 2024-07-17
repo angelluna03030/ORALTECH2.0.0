@@ -4,6 +4,7 @@ import {
   BotonUbicacion,
   Iconos,
   Sonrisa,
+  BotonMedellin
 } from "./components/index";
 import logo from "./assets/logo.png";
 import iconWhatsapp from "./assets/whatsapp.png";
@@ -34,7 +35,7 @@ const App = () => {
           style={{
             width: "500px",
             height: "180px",
-            zIndex: 99999,
+            zIndex: 99,
           }}
         />
       </div>
@@ -66,7 +67,8 @@ const App = () => {
       />
       <h1 className="titulo">MEDELLÍN</h1>
       <Video />
-      <Boton
+      
+      <BotonMedellin
         icono={iconWhatsapp}
         titulo="AGENDE SU CITA"
         link="https://api.whatsapp.com/send?phone=573224130747&text=Hola, quisiera saber información sobre."
@@ -76,7 +78,7 @@ const App = () => {
         titulo="UBICACION"
         link="https://api.whatsapp.com/send?phone=573224130747&text=Hola, quisiera saber información sobre."
       />
-      
+
       <Iconos />
       <Sonrisa />
     </>

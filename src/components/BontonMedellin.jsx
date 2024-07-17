@@ -1,10 +1,12 @@
-export const Boton = ({ titulo, icono, link, style }) => {
+export const BotonMedellin = ({ titulo, icono, link, style }) => {
     return (
         <div style={{
             display: 'flex',
             justifyContent: 'center',
             marginTop: "20px",
-            cursor: 'pointer'
+            cursor: 'pointer',
+            position : "relative",
+            zIndex: 900
         }}>
             <a href={link} style={{
                 textDecoration: "none",

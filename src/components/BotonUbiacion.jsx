@@ -5,7 +5,9 @@ export const BotonUbicacion = ({ titulo, icono, link, style  }) => {
             justifyContent: 'center',
            marginTop: "20px",
            textAlign: 'center',
-         
+            cursor: 'pointer',
+            position : "relative",
+            zIndex: 900
         }}>
             <a href={link} style={{
                textDecoration : "none",
