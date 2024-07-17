@@ -10,6 +10,7 @@ export const Iconos = () => {
         textAlign: "center",
         marginRight: "50px",
       }}
+      className="icons-lineal"
     >
       <ul className="example-2">
         <li className="">
@@ -41,8 +42,6 @@ export const Iconos = () => {
           >
             <img src={diente} style={{ width: "120px" }} alt="Diente" />
             <img src={tiktok} alt="tik-tok"  style={{ width: "45px",       position : "relative", top : "-110px" }}/>
-
-          
           </a>
         </li>
       </ul>

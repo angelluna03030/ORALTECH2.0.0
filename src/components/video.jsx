@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import video from "../assets/video.mp4";
-import odoontolos from "../assets/odontologos.jpg";
+import odoontolos from "../assets/49.jpg";
 
 export const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,56 +21,27 @@ export const Video = () => {
   };
 
   return (
-    <div
-      className="play-button-container"
-      style={{ position: "relative", }}
-    >
+    <div className="play-button-container">
       {/* Imagen */}
       {isVisible && (
         <div
           style={{
             position: "relative",
-            textAlign: "center",
             top: "-120px",
             borderRadius: "60px",
           }}
+          className="imagen-video"
         >
-          <img
-            src={odoontolos}
-            alt="Imagen"
-            style={{
-              borderRadius: "40px", // Arriba izquierda, arriba derecha, abajo derecha, abajo izquierda
-              width: "900px",
-              height: "350px",
-            }}
-          />
+          <img src={odoontolos} alt="Imagen" className="imagen-video-imagen" />
           <div
-            style={{
-              width: "585px",
-              height: "100px",
-              position: "relative",
-              zIndex: "-10",
-              bottom: "40px",
-              left: "157px",
-
-              borderRadius: "0px 0px 40px  40px",
-
-              fontSize: "50px",
-              color: "white",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-              // biome-ignore lint/suspicious/noDuplicateObjectKeys: <explanation>
-              background: "rgb(140,193,215)",
-              background:
-                "linear-gradient(90deg, rgba(140,193,215,1) 35%, rgba(100,174,199,1) 100%)",
-            }}
+     
+        className="banner-text"
           >
             PROMOCIÓN
           </div>
           {!isPlaying && (
             // biome-ignore lint/a11y/useButtonType: <explanation>
-<button
+            <button
               className="play-button"
               onClick={togglePlay}
               style={{
@@ -99,16 +70,16 @@ export const Video = () => {
       )}
 
       {/* Video */}
+      {/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
       <video
         className="video"
         autoPlay
         controls
         loop={true}
-        muted
         src={video}
         ref={videoRef}
         style={{
-          width: "600px",
+          width: "450px",
           borderRadius: "40px",
           // Oculta el video si no está reproduciéndose
           display: isPlaying ? "block" : "none",
