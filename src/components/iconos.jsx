@@ -54,7 +54,7 @@ export const Iconos = () => {
         position : "relative",
         zIndex: 90
       }}
-            href="https://www.tiktok.com/@oraltechodontologia"
+            href="https://www.tiktok.com/@oraltechclinicadental"
             aria-label="tik-tok"
             data-social="tik-tok"
           >
