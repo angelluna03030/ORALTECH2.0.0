@@ -8,9 +8,7 @@ export const Iconos = () => {
       style={{
         justifyContent: "center",
         textAlign: "center",
-        marginRight: "50px",
-        
-           
+        marginRight: "50px", 
       }}
       className="icons-lineal"
     >
@@ -18,8 +16,6 @@ export const Iconos = () => {
         <li className="">
           <a
           style={{
-        
-          
             position : "relative",
             zIndex: 900
           }}
