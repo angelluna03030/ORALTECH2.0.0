@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import Imagenlogo from '../../assets/Recurso 6.png';
+import Imagenlogo from '../../assets/webp/Recurso 6.webp';
 import Image from 'next/image';
 export const Header = () => {
     // Estados para controlar los menús
