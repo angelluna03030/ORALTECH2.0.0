@@ -47,9 +47,9 @@ export default function Home() {
       />
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
-       <div className="relative flex flex-col items-center justify-center h-[300px] my-10">
+      <div className="relative flex flex-col items-center justify-center h-28 mt-52  ">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
-        Transformación en OralTech
+          Transformación en OralTech
         </p>
         <Image
           loading="lazy"
@@ -59,14 +59,27 @@ export default function Home() {
           className="absolute right-0 lg:right-52 w-14 md:w-20 lg:w-30 z-10 justify-items-start items-start"
         />
       </div>
-<BeforeAfterSliderImage
-descripcion="Imagenes de referencia"
-titulo="Imagenes de referencia"
-alt="Imagenes de referencia"
-srcImagenBefore={SegundaImagen.src}
-srcImagenafter={PrimeroImagen.src}
 
-></BeforeAfterSliderImage>
+<section className="flex flex-wrap justify-evenly items-center    ">
+  <div className="w-full md:w-1/2 lg:w-5/12 p-3">
+    <BeforeAfterSliderImage
+      descripcion="Imagenes de referencia"
+      titulo="Imagenes de referencia"
+      alt="Imagenes de referencia"
+      srcImagenBefore={SegundaImagen.src}
+      srcImagenafter={PrimeroImagen.src}
+    />
+  </div>
+  <div className="w-full md:w-1/2 lg:w-5/12 p-2">
+    <BeforeAfterSliderImage
+      descripcion="Imagenes de referencia"
+      titulo="Imagenes de referencia"
+      alt="Imagenes de referencia"
+      srcImagenBefore={SegundaImagen.src}
+      srcImagenafter={PrimeroImagen.src}
+    />
+  </div>
+</section>
 
     </div>
   );

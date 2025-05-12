@@ -5,27 +5,29 @@ import Image from 'next/image';
 export const Header = () => {
     // Estados para controlar los menús
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-
+   
     // Manejadores de eventos
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const toggleServicesDropdown = () => {
-        setIsServicesDropdownOpen(!isServicesDropdownOpen);
-    };
-
+    /**
+     * Toggles the state of the services dropdown menu.
+     * If the dropdown is currently open, it will be closed, and vice versa.
+     */
+  
     return (
+        
         <header className="bg-[#47C1F0] shadow-lg py-4 sticky top-0 z-50 text-xl">
+         
             <div className="container mx-auto flex items-center justify-between px-4">
                 <a href="#" className="flex items-center text-primary hover:text-secondary">
                    <Image alt='Imagen logo' width={160} src={Imagenlogo}></Image>
                 </a>
 
-                <div className="md:hidden">
+                <div className="md:hidden ">
                     <button onClick={toggleMobileMenu}
-                        className="text-white hover:text-primary focus:outline-none transition-colors duration-300">
+                        className="text-white cursor-pointer hover:text-primary focus:outline-none transition-colors duration-300">
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>

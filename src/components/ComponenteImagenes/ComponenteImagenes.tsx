@@ -5,7 +5,6 @@ import MicroDiseño from "@/assets/webp/Microdiseño de Sonrisa.webp"
 import Blanquimineto from "@/assets/webp/Blanqueamiento.webp"
 import LimpiezaDental from "@/assets/webp/Limpieza dental.webp"
 import Ortodoncia from "@/assets/webp/Ortodoncia.webp"
-import Implantes from "@/assets/webp/Implante dental.webp"
 
 export const ComponenteServicios = () => {
     const servicios = [

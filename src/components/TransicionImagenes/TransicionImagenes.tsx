@@ -1,7 +1,5 @@
-"use client";
+
 import { ComponenteImagenesPropsTransicion } from "@/utils/Interface/interface";
-import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
 
 import {
   ReactCompareSlider,
@@ -28,11 +26,13 @@ export const BeforeAfterSliderImage = ({
               alt={alt}
               loading="lazy"
               title={titulo}
+              about={descripcion}
               className="object-cover w-full h-full brightness-105"
             />
           }
           itemTwo={
             <ReactCompareSliderImage
+             about={descripcion}
               src={srcImagenafter}
               srcSet={srcImagenBefore}
               alt={alt}
