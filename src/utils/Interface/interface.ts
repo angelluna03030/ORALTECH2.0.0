@@ -17,3 +17,11 @@ export interface ComponenteImagenesPropsTransicion {
     titulo: string;
     descripcion: string;
 }
+
+export interface ComponenteImagenesPropsInformacion {
+    src: string;
+    alt: string;
+    titulo: string;
+    descripcion: string;
+    cantidad: number;
+}

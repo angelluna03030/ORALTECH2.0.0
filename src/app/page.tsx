@@ -9,6 +9,8 @@ import "@/styles/globals.css";
 import { BeforeAfterSliderImage } from "@/components/TransicionImagenes";
 import PrimeroImagen from "@/assets/webp/imagen1.webp";
 import SegundaImagen from "@/assets/webp/imagen2.webp";
+
+import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 export default function Home() {
   return (
     <div className="">
@@ -60,7 +62,7 @@ export default function Home() {
         />
       </div>
 
-      <section className="flex flex-wrap justify-evenly items-center    ">
+      <section className="flex flex-wrap justify-evenly items-center   ">
         <div className="w-full md:w-1/2 lg:w-5/12 p-3">
           <BeforeAfterSliderImage
             descripcion="Imagenes de referencia"
@@ -81,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex items-center justify-center  w-full absolute my-10">
+      <div className="flex items-center justify-center  w-full absolute my-10 ">
         <p className="text-[#1462A7] relative  text-2xl md:text-3xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
           “Atención profesional, cómoda y segura”
         </p>
@@ -92,6 +94,17 @@ export default function Home() {
           className="relative sm:left-60 mt-32 sm:mt-0"
         ></Botones>
       </div>
+      <section className="flex flex-col items-center justify-center pt-40">
+        <Image
+          src={Banner}
+          alt="Banner de OralTech"
+          loading="lazy"
+          decoding="async"
+          title="Banner de OralTech"
+          className="w-full h-auto object-cover mt-20 cursor-pointer"
+        ></Image>
+      </section>
+    
     </div>
   );
 }
