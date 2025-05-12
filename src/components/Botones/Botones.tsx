@@ -1,11 +1,7 @@
+import { BotonesProps } from "@/utils/Interface/interface";
 import Link from "next/link";
 
 // Definir la interfaz para las props
-interface BotonesProps {
-  text: string;
-  url: string;
-  className?: string; // Propiedad opcional para clases personalizadas
-}
 
 export const Botones = ({ text, url, className = "" }: BotonesProps) => {
   return (
