@@ -12,11 +12,11 @@ export const InformacionData: ComponenteImagenesPropsInformacion[] = [
     cantidad: 10,
   },
   {
-    src: Imagenes1.src,
+    src: Imagenes2.src,
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: " Servicios Realizados",
-    cantidad: 13.068,
+    cantidad: 13068,
   },
   {
     src: Imagenes1.src,

@@ -9,8 +9,8 @@ import "@/styles/globals.css";
 import { BeforeAfterSliderImage } from "@/components/TransicionImagenes";
 import PrimeroImagen from "@/assets/webp/imagen1.webp";
 import SegundaImagen from "@/assets/webp/imagen2.webp";
-
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
+import { Informacion } from "@/components/Informacion";
 export default function Home() {
   return (
     <div className="">
@@ -104,7 +104,7 @@ export default function Home() {
           className="w-full h-auto object-cover mt-20 cursor-pointer"
         ></Image>
       </section>
-    
+    <Informacion></Informacion>
     </div>
   );
 }
