@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="">
       <Header />
-      <div className="relative flex flex-col items-center justify-center h-[300px] sm:my-10">
+      <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
           Nuestros servicios
         </p>
@@ -60,27 +60,38 @@ export default function Home() {
         />
       </div>
 
-<section className="flex flex-wrap justify-evenly items-center    ">
-  <div className="w-full md:w-1/2 lg:w-5/12 p-3">
-    <BeforeAfterSliderImage
-      descripcion="Imagenes de referencia"
-      titulo="Imagenes de referencia"
-      alt="Imagenes de referencia"
-      srcImagenBefore={SegundaImagen.src}
-      srcImagenafter={PrimeroImagen.src}
-    />
-  </div>
-  <div className="w-full md:w-1/2 lg:w-5/12 p-2">
-    <BeforeAfterSliderImage
-      descripcion="Imagenes de referencia"
-      titulo="Imagenes de referencia"
-      alt="Imagenes de referencia"
-      srcImagenBefore={SegundaImagen.src}
-      srcImagenafter={PrimeroImagen.src}
-    />
-  </div>
-</section>
+      <section className="flex flex-wrap justify-evenly items-center    ">
+        <div className="w-full md:w-1/2 lg:w-5/12 p-3">
+          <BeforeAfterSliderImage
+            descripcion="Imagenes de referencia"
+            titulo="Imagenes de referencia"
+            alt="Imagenes de referencia"
+            srcImagenBefore={SegundaImagen.src}
+            srcImagenafter={PrimeroImagen.src}
+          />
+        </div>
+        <div className="w-full md:w-1/2 lg:w-5/12 p-2">
+          <BeforeAfterSliderImage
+            descripcion="Imagenes de referencia"
+            titulo="Imagenes de referencia"
+            alt="Imagenes de referencia"
+            srcImagenBefore={SegundaImagen.src}
+            srcImagenafter={PrimeroImagen.src}
+          />
+        </div>
+      </section>
 
+      <div className="flex items-center justify-center  w-full absolute my-10">
+        <p className="text-[#1462A7] relative  text-2xl md:text-3xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
+          “Atención profesional, cómoda y segura”
+        </p>
+
+        <Botones
+          text=" RESERVA TU CONSULTA"
+          url="/AGENDA TU CITA"
+          className="relative sm:left-60 mt-32 sm:mt-0"
+        ></Botones>
+      </div>
     </div>
   );
 }
