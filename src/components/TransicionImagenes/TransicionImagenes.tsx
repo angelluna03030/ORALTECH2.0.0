@@ -46,13 +46,13 @@ export const BeforeAfterSliderImage = ({
             <ReactCompareSliderHandle
               buttonStyle={{
                 backdropFilter: "blur(3px)",
-                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
                 border: "none",
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
               }}
               linesStyle={{
                 width: "2px",
-                backgroundColor: "rgba(255, 255, 255, 0.8)",
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
               }}
             />
