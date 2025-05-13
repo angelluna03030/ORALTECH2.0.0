@@ -107,7 +107,6 @@ export const Footer = () => {
                             />
                         </a>
                     </div>
-
                     {/* Logo */}
                     <div className="text-center">
                         <Image
