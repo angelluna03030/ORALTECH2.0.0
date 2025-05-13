@@ -11,7 +11,6 @@ import PrimeroImagen from "@/assets/webp/imagen1.webp";
 import SegundaImagen from "@/assets/webp/imagen2.webp";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import Bannerprincipal from "@/assets/webp/banner.webp";
-
 import { Informacion } from "@/components/Informacion";
 import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
@@ -61,7 +60,6 @@ export default function Home() {
         priority={false}
         quality={80}
       />
-
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
       <div className="relative flex flex-col items-center justify-center h-28 mt-52  ">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
