@@ -30,8 +30,6 @@ export default function Home() {
           className="w-full h-auto object-cover mt-14 cursor-pointer"
         ></Image>
       </section>
-
-
       <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
           Nuestros servicios

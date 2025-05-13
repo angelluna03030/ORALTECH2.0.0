@@ -3,7 +3,7 @@
    z-index: 0;
    width: 41.666%;
    /* equivalente a w-5/12 */
-   top: 92.8rem;
+   top: 91rem;
    right: 52.5rem;
 
    left: calc(5/12 * -10%),
@@ -15,7 +15,7 @@
      /* ligeramente más grande en móviles */
      right: -5%;
      /* ajuste para móviles */
-     top: 161rem;
+     top: 159.5rem;
      left: -1rem;
 
    }
@@ -33,7 +33,7 @@
    z-index: 0;
    width: 41.666%;
    /* equivalente a w-5/12 */
-   top: 281.5rem;
+   top: 280.5rem;
    right: 52.5rem;
 
    left: calc(5/12 * -10%),
@@ -45,7 +45,7 @@
      /* ligeramente más grande en móviles */
      right: -5%;
      /* ajuste para móviles */
-     top: 370.5rem;
+     top: 369rem;
      left: -1rem;
 
    }
