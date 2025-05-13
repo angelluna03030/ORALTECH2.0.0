@@ -18,7 +18,6 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="">
-
       <Header />
       <section className="flex flex-col items-center justify-center ">
         <Image
@@ -115,16 +114,14 @@ export default function Home() {
           alt="Banner de OralTech"
           loading="lazy"
           decoding="async"
-          title="Banner de OralTech"
+          title="Banner Sobre Nosotros"
           className="w-full h-auto object-cover mt-20 cursor-pointer"
         ></Image>
       </section>
       <Informacion></Informacion>
-
       <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
           Ubicación
-
         </p>
         <Image
           loading="lazy"
@@ -154,7 +151,6 @@ export default function Home() {
           className="absolute right-0 lg:right-0 w-14 md:w-20 lg:w-30 z-10 "
         />
       </div>
-
 
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA"></Botones>
