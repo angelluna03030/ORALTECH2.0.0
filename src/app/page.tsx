@@ -11,6 +11,7 @@ import PrimeroImagen from "@/assets/webp/imagen1.webp";
 import SegundaImagen from "@/assets/webp/imagen2.webp";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import { Informacion } from "@/components/Informacion";
+import { Ubicacion } from "@/components/Ubicacion";
 export default function Home() {
   return (
     <div className="">
@@ -105,6 +106,45 @@ export default function Home() {
         ></Image>
       </section>
     <Informacion></Informacion>
+
+     <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
+        <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
+          Ubicación
+
+        </p>
+        <Image
+          loading="lazy"
+          title="Imagen diente"
+          src={ImagenDiente}
+          alt="Imagen diente"
+          className="absolute left-28 lg:left-4/12 w-14 md:w-20 lg:w-30 z-10 justify-items-start items-start"
+        />
+      </div>
+
+      <Ubicacion></Ubicacion>
+
+       <div className="flex flex-col items-center justify-center my-16">
+        <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
+      </div>
+         <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
+
+      <div className="relative flex flex-col items-center justify-center h-28 py-32  w-3/5 m-auto ">
+        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-[#272863] z-20">
+        Testimonios de nuestros pacientes 
+        </p>
+        <Image
+          loading="lazy"
+          title="Imagen diente"
+          src={ImagenDiente}
+          alt="Imagen diente"
+          className="absolute right-0 lg:right-0 w-14 md:w-20 lg:w-30 z-10 "
+        />
+      </div>
+
+      
+       <div className="flex flex-col items-center justify-center my-16">
+        <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA"></Botones>
+      </div>
     </div>
   );
 }
