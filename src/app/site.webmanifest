@@ -27,7 +27,7 @@
       "short_name": "Contacto",
       "url": "/contacto",
       "description": "Contactar a nuestro equipo técnico",
-      "icons": [{ "src": "/icons/contacto-192x192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "../icons/contacto-192x192.png", "sizes": "192x192" }]
     }
   ],
   "screenshots": [
