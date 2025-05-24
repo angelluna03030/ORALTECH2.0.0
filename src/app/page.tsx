@@ -14,6 +14,7 @@ import Bannerprincipal from "@/assets/webp/banner.webp";
 import { Informacion } from "@/components/Informacion";
 import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
+import { Transformacionsetion } from "@/components/Transformacion";
 export default function Home() {
   return (
     <div className="">
@@ -61,19 +62,7 @@ export default function Home() {
         quality={80}
       />
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
-      <div className="relative flex flex-col items-center justify-center h-28 mt-52  ">
-        <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
-          Transformación en OralTech
-        </p>
-        <Image
-          loading="lazy"
-          title="Imagen diente"
-          src={ImagenDiente}
-          alt="Imagen diente"
-          className="absolute right-0 lg:right-52 w-14 md:w-20 lg:w-30 z-10 justify-items-start items-start"
-        />
-      </div>
-
+  <Transformacionsetion/>
       <section className="flex flex-wrap justify-evenly items-center   ">
         <div className="w-full md:w-1/2 lg:w-5/12 p-3">
           <BeforeAfterSliderImage

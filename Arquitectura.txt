@@ -13,3 +13,13 @@ landing-page/
 │── package.json    # Configuración de dependencias
 │── .gitignore      # Archivos a ignorar en Git
 │── README.md       # Documentación del proyecto
+
+
+
+TECNICA DE COLOR 
+60% 30% 10%
+
+
+60& => #FFFFFF
+30% => #46BEF0
+10% => #28295F
