@@ -1,6 +1,7 @@
 import { Award, Heart, Shield, Smile, Sparkles, Users } from "lucide-react";
 import imagen from "../../assets/webp/Recurso 1.webp";
 import Image from "next/image";
+import diente from "../../assets/webp/sonrisa.webp";
 export const Hero = () => {
   return (
     <>
@@ -47,25 +48,32 @@ export const Hero = () => {
                 <div className="absolute w-60 h-60 md:w-80 md:h-80 bg-gradient-to-br from-blue-100 to-blue-50 rounded-full shadow-2xl"></div>
 
                 {/* Floating elements */}
-                <div className="absolute top-6 md:top-10 left-6 md:left-10 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg rotate-12 flex items-center justify-center">
+                <div className="absolute top-6 md:top-10 left-6 md:left-10 w-12 h-12 md:w-16 md:h-16 bg-[#28295F] rounded-2xl shadow-lg rotate-12 flex items-center justify-center">
                   <Smile className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
 
-                <div className="absolute top-12 md:top-20 right-8 md:right-16 w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-xl shadow-lg -rotate-12 flex items-center justify-center">
+                <div className="absolute top-12 md:top-20 right-8 md:right-16 w-10 h-10 md:w-12 md:h-12 bg-[#46BEF0] rounded-xl shadow-lg -rotate-12 flex items-center justify-center">
                   <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
 
-                <div className="absolute bottom-12 md:bottom-16 left-8 md:left-16 w-11 h-11 md:w-14 md:h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl shadow-lg rotate-45 flex items-center justify-center">
-                  <Shield className="w-5 h-5 md:w-7 md:h-7 text-white" />
+                <div className="absolute bottom-12 md:bottom-16 left-8 md:left-16 w-11 h-11 md:w-14 md:h-14 bg-[#46BEF0] rounded-2xl shadow-lg rotate-45 flex items-center justify-center">
+                      <Image
+                      src={diente}
+                      alt="Imagen de cuidado dental"
+                      className="p-1"
+                      loading="lazy"
+                      decoding="async"
+                      title="Imagen de cuidado dental"
+                    ></Image>
                 </div>
 
-                <div className="absolute bottom-6 md:bottom-10 right-6 md:right-10 w-14 h-14 md:w-18 md:h-18 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full shadow-lg flex items-center justify-center">
+                <div className="absolute bottom-6 md:bottom-10 right-6 md:right-10 w-14 h-14 md:w-18 md:h-18 bg-[#28295F] rounded-full shadow-lg flex items-center justify-center">
                   <Heart className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
 
                 {/* Center content */}
                 <div className="relative z-10 text-center space-y-3 md:space-y-4">
-                  <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl md:rounded-3xl shadow-2xl mx-auto flex items-center justify-center mb-4 md:mb-6">
+                  <div className="w-16 h-16 md:w-24 md:h-24 bg-[#46BEF0] rounded-2xl md:rounded-3xl shadow-2xl mx-auto flex items-center justify-center mb-4 md:mb-6">
                     <Image
                       src={imagen}
                       alt="Imagen de cuidado dental"

@@ -14,6 +14,8 @@ import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
 import { Transformacionsetion } from "@/components/Transformacion";
 import { Hero } from "@/components/Hero/Hero";
+import { Video } from "@/components/video/Video";
+import { WhatsAppWidget } from "@/components/WhatsApp";
 export default function Home() {
   return (
     <div className="">
@@ -21,6 +23,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center ">
       <Hero></Hero>
       </section>
+      <Video></Video>
       <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
         <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
           Nuestros servicios
@@ -116,6 +119,7 @@ export default function Home() {
         priority={false}
         quality={80}
       />
+      <WhatsAppWidget></WhatsAppWidget>
       <Footer></Footer>
     </div>
   );
