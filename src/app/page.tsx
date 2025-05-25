@@ -21,7 +21,7 @@ export default function Home() {
     <div className="">
       <Header />
       <section className="flex flex-col items-center justify-center ">
-      <Hero></Hero>
+        <Hero></Hero>
       </section>
       <Video></Video>
       <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
@@ -44,11 +44,9 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center my-30">
         <Botones text="AGENDA TU CITA" url="/AGENDA TU CITA"></Botones>
       </div>
-   
-      <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
-  <Transformacionsetion/>
-     
 
+      <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
+      <Transformacionsetion />
       <div className="flex items-center justify-center  w-full absolute my-10 ">
         <p className="text-[#1462A7] relative  text-2xl md:text-3xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
           “Atención profesional, cómoda y segura”
