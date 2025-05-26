@@ -176,7 +176,7 @@ export const Video =()=> {
             >
               <video
                 ref={videoRef}
-                src="./video.mp4"
+                src="https://res.cloudinary.com/do8uezira/video/upload/v1748234806/g9hjyahttickdexbx16n.mp4"
                 poster={imagenbanner.src} width={500}
                 height={300}
                 className="w-full h-[300px] object-cover"
