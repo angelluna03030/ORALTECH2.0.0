@@ -279,7 +279,6 @@ export const WhatsAppWidget = ({
                 En línea
               </p>
             </div>
-           
           </div>
 
           {/* Chat Body */}

@@ -49,7 +49,7 @@ export const ComponenteServicios = () => {
                 </div>
 
                 <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-xl font-medium text-slate-800 text-center">{service.titulo}</h3>
+                
                 </div>
 
                 {/* Fullscreen Overlay - Layout Responsivo */}
@@ -89,7 +89,7 @@ export const ComponenteServicios = () => {
 
                       {/* Botón cerrar */}
                       <button
-                        className="absolute top-4 md:top-8 right-4 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95 duration-700 delay-600"
+                        className="absolute cursor-pointer top-4 md:top-8 right-4 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95 duration-700 delay-600"
                         onClick={() => setHoveredService(null)}
                       >
                         <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

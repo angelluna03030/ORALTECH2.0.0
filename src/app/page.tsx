@@ -6,9 +6,7 @@ import { ComponenteServicios } from "@/components/ComponenteImagenes";
 import { Botones } from "@/components/Botones/Botones";
 import Sonrisa from "@/assets/webp/sonrisa.webp";
 import "@/styles/globals.css";
-
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
-import Bannerprincipal from "@/assets/webp/banner.webp";
 import { Informacion } from "@/components/Informacion";
 import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
