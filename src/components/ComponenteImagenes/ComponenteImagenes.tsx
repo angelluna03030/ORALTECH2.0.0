@@ -54,7 +54,7 @@ export const ComponenteServicios = () => {
 
                 {/* Fullscreen Overlay - Layout Responsivo */}
                 {hoveredService === service.id && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4">
+                  <div key={service.id} className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4">
                     <div className="relative w-full max-w-7xl h-full max-h-[90vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
                       {/* Imagen a la izquierda */}
                       <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-[70vh] rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl animate-in slide-in-from-left-8 duration-700">
