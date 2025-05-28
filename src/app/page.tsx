@@ -8,7 +8,7 @@ import Sonrisa from "@/assets/webp/sonrisa.webp";
 import "@/styles/globals.css";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import { Informacion } from "@/components/Informacion";
-import { Ubicacion } from "@/components/Ubicacion";
+import { DentalLocations } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
 import { Transformacionsetion } from "@/components/Transformacion";
 import { Hero } from "@/components/Hero/Hero";
@@ -56,26 +56,11 @@ export default function Home() {
         ></Image>
       </section>
       <Informacion></Informacion>
-      <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
-        <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
-          Ubicación
-        </p>
-        <Image
-          loading="lazy"
-          title="Imagen diente"
-          src={ImagenDiente}
-          alt="Imagen diente"
-          className="absolute left-28 lg:left-4/12 w-14 md:w-20 lg:w-30 z-10 justify-items-start items-start"
-        />
-      </div>
-
-      <Ubicacion></Ubicacion>
-
+      <DentalLocations></DentalLocations>
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>
       <hr className="bg-[#28295F] w-full absolute h-4 border-none z-10" />
-
       <div className="relative flex flex-col items-center justify-center h-28 py-32  w-3/5 m-auto ">
         <p className="text-4xl md:text-5xl font-bold text-center text-[#272863] z-20">
           Testimonios de nuestros pacientes
@@ -92,18 +77,6 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA"></Botones>
       </div>
-      <Image
-        className="responsive-smile-image-2"
-        alt="Sonrisa saludable de paciente satisfecho"
-        loading="lazy"
-        decoding="async"
-        title="Sonrisa perfecta después de tratamiento dental"
-        src={Sonrisa}
-        placeholder="blur"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        priority={false}
-        quality={80}
-      />
       <WhatsAppWidget></WhatsAppWidget>
       <Footer></Footer>
     </div>
