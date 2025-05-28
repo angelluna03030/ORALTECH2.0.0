@@ -23,6 +23,6 @@ export const InformacionData: ComponenteImagenesPropsInformacion[] = [
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: " Seguidores en Redes Sociales",
-    cantidad: 10,
+    cantidad: 13000,
   },
 ];

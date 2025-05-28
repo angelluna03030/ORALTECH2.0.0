@@ -18,24 +18,24 @@ export const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <div className="space-y-6 md:space-y-8 text-center lg:text-left">
               <div className="space-y-4 md:space-y-6">
-                <div className="inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 text-[#28295F] px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium">
                   <Award className="w-3 h-3 md:w-4 md:h-4" />
                   <span>Clínica #1 en satisfacción del paciente</span>
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className=" text-[#46BEF0]">Tu sonrisa es nuestra</span>
+                  <span className="  text-[#28295F]">Tu sonrisa es nuestra</span>
                   <br />
-                  <span className="  text-[#28295F] ">prioridad</span>
+                  <span className="  text-[#46BEF0] ">prioridad</span>
                 </h1>
                 <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 ">
                   Luce una nueva sonrisa de ensueño con nuestros servicios.
                 </p>
               </div>
               <div className="flex flex-col mt-28 text-white rounded-lg sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
-                <button className=" text-white rounded-lg cursor-pointer bg-[#46BEF0] text-base md:text-lg px-6 md:px-8 py-3 md:py-4 shadow-lg">
+                <button className=" text-white rounded-lg cursor-pointer bg-[#28295F] text-base md:text-lg px-6 md:px-8 py-3 md:py-4 shadow-lg">
                   Agendar Consulta
                 </button>
-                <button className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 border-2 cursor-pointer hover:bg-gray-50 text-[#28295F] rounded-lg">
+                <button className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 border-2 cursor-pointer hover:bg-gray-50 text-[#46BEF0] rounded-lg">
                   Conocer Más
                 </button>
               </div>

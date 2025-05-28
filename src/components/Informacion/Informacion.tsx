@@ -31,16 +31,7 @@ export const Informacion = () => {
               title={item.titulo}
             />
             <div className="relative">
-              <Image
-                src={Diente}
-                alt="Imagen diente"
-                width={500}
-                height={500}
-                loading="lazy"
-                decoding="async"
-                title="Imagen diente"
-                className="absolute z-0 -right-12 top-1/2 transform -translate-y-1/2 w-16 md:w-20 lg:w-24 h-auto opacity-60"
-              />
+            
               <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-1 relative z-10">
                 +<CountUp end={item.cantidad} duration={5} />
               </h2>

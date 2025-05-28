@@ -157,7 +157,7 @@ export const Video =()=> {
           <div className="space-y-6">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-light text-gray-900 leading-tight">
-                Nuestro espacio de <span className="underline decoration-gray-300 underline-offset-4">servicio</span>
+                Nuestro espacio de <span className="underline decoration-gray-300 underline-offset-4">Trabajo</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed max-w-md">
                 Disfruta de mayor comodidad y seguridad en nuestra clínica, ubicada en el corazón del barrio más

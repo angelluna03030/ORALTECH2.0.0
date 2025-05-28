@@ -22,20 +22,9 @@ export default function Home() {
         <Hero></Hero>
       </section>
       <Video></Video>
-      <div className="relative flex flex-col items-center justify-center h-28 sm:my-10">
-        <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#272863] z-20">
-          Nuestros servicios
-        </p>
-        <Image
-          loading="lazy"
-          title="Imagen diente"
-          src={ImagenDiente}
-          alt="Imagen diente"
-          className="absolute left-13 lg:left-88 w-14 md:w-20 lg:w-30 z-10 justify-items-start items-start"
-        />
-      </div>
+     
       <ComponenteServicios></ComponenteServicios>
-      <p className="flex m-auto items-center justify-center text-[#1462A7] text-2xl md:text-3xl lg:text-4xl font-bold text-center w-full my-3">
+      <p className="flex m-auto items-center justify-center text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
         {" "}
         “Atención profesional, cómoda y segura”
       </p>
@@ -46,7 +35,7 @@ export default function Home() {
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
       <Transformacionsetion />
       <div className="flex items-center justify-center  w-full absolute my-10 ">
-        <p className="text-[#1462A7] relative  text-2xl md:text-3xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
+        <p className="text-[#28295F] relative  text-4xl md:text-5xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
           “Atención profesional, cómoda y segura”
         </p>
 
@@ -85,10 +74,10 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>
-      <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
+      <hr className="bg-[#28295F] w-full absolute h-4 border-none z-10" />
 
       <div className="relative flex flex-col items-center justify-center h-28 py-32  w-3/5 m-auto ">
-        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-[#272863] z-20">
+        <p className="text-4xl md:text-5xl font-bold text-center text-[#272863] z-20">
           Testimonios de nuestros pacientes
         </p>
         <Image
