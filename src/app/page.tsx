@@ -14,6 +14,7 @@ import { Transformacionsetion } from "@/components/Transformacion";
 import { Hero } from "@/components/Hero/Hero";
 import { Video } from "@/components/video/Video";
 import { WhatsAppWidget } from "@/components/WhatsApp";
+import { TestimoniosSection } from "@/components/Testimonios";
 export default function Home() {
   return (
     <div className="">
@@ -22,28 +23,39 @@ export default function Home() {
         <Hero></Hero>
       </section>
       <Video></Video>
-     
+
       <ComponenteServicios></ComponenteServicios>
-      <p className="flex m-auto items-center justify-center text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
+      <p className="flex m-auto items-center justify-center mb-10 text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
         {" "}
         “Atención profesional, cómoda y segura”
       </p>
-      <div className="flex flex-col items-center justify-center my-30">
+      <div className="flex flex-col items-center justify-center py-40">
         <Botones text="AGENDA TU CITA" url="/AGENDA TU CITA"></Botones>
       </div>
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
       <Transformacionsetion />
-      <div className="flex items-center justify-center  w-full absolute my-10 ">
-        <p className="text-[#28295F] relative  text-4xl md:text-5xl  sm:w-2/6 w-full lg:text-4xl font-bold sm:left-20 sm:ml-40">
-          “Atención profesional, cómoda y segura”
-        </p>
+      <div className="w-full  px-4 sm:py-12 lg:py-16">
+        <div className="container mx-auto max-w-7xl">
+          {/* Layout responsivo usando Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Sección del texto */}
+            <div className="text-center">
+              <h1 className="text-[#28295F] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                "Atención profesional, cómoda y segura"
+              </h1>
+            </div>
 
-        <Botones
-          text=" RESERVA TU CONSULTA"
-          url="/AGENDA TU CITA"
-          className="relative sm:left-60 mt-32 sm:mt-0"
-        ></Botones>
+            {/* Sección del botón */}
+            <div className="flex justify-center">
+              <Botones
+                text="RESERVA TU CONSULTA"
+                url="/AGENDA TU CITA"
+                className="w-full sm:w-auto text-sm sm:text-base"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <section className="flex flex-col items-center justify-center pt-40">
         <Image
@@ -61,19 +73,8 @@ export default function Home() {
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>
       <hr className="bg-[#28295F] w-full absolute h-4 border-none z-10" />
-      <div className="relative flex flex-col items-center justify-center h-28 py-32  w-3/5 m-auto ">
-        <p className="text-4xl md:text-5xl font-bold text-center text-[#272863] z-20">
-          Testimonios de nuestros pacientes
-        </p>
-        <Image
-          loading="lazy"
-          title="Imagen diente"
-          src={ImagenDiente}
-          alt="Imagen diente"
-          className="absolute right-0 lg:right-0 w-14 md:w-20 lg:w-30 z-10 "
-        />
-      </div>
 
+      <TestimoniosSection></TestimoniosSection>
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA"></Botones>
       </div>

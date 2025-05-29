@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {/* Company Info */}
-            <div className="lg:col-span-2 space-y-6 text-center md:text-left">
+            <div className="lg:col-span-2 space-y-6 text-center md:text-left mb-12">
               <div className="flex items-center space-x-3 justify-center md:justify-start">
                 <a
                   href="#"
@@ -30,7 +30,7 @@ export const Footer = () => {
                   <Image alt="Imagen logo" width={160} src={logo}></Image>
                 </a>
               </div>
-              <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-md mx-auto md:mx-0">
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-md mx-auto md:mx-0  ">
                 Cuidando tu sonrisa con profesionalismo y tecnología de
                 vanguardia desde hace más de 10 años. Tu salud dental es nuestra
                 prioridad.

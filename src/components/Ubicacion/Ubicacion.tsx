@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MapPin, Phone, Clock, ArrowRight, Star, Award } from "lucide-react";
 import { locations } from "./index";
+import placeholder from "../../assets/webp/placeholder.webp";
 export const DentalLocations = () => {
   return (
     <section className="relative py-20 px-4 overflow-hidden">
@@ -8,9 +9,9 @@ export const DentalLocations = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white " />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(14,165,233,0.05),transparent_50%)]" />
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto ">
         {/* Enhanced Header */}
-        <div className="text-center mb-16 ">
+        <div className="text-center mb-28">
           <div className="inline-flex items-center space-x-2 bg-blue-50 text-[#28295F] px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium">
             <Star className="w-4 h-4 fill-current text-[#28295F] " />
             Ubicaciones Premium
@@ -26,7 +27,7 @@ export const DentalLocations = () => {
         </div>
 
         {/* Premium Locations Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 pt-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 pt-20 ">
           {locations.map((location, index) => (
             <div
               key={location.id}
@@ -53,7 +54,7 @@ export const DentalLocations = () => {
               {/* Enhanced Image */}
               <div className="relative h-72 overflow-hidden">
                 <Image
-                  src={location.image || "/placeholder.svg"}
+                  src={location.image || placeholder.src}
                   alt={`Vista del ${location.name}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"

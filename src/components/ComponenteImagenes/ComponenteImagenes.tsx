@@ -30,7 +30,7 @@ export const ComponenteServicios = () => {
       </div>
 
       <section
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
+        className="grid py-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
         style={{
           justifyContent: "space-evenly",
           flexDirection: "row",
