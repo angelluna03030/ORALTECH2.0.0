@@ -70,7 +70,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>
-      <hr className="bg-[#28295F] w-full absolute h-4 border-none z-10" />
+          <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
 
       <TestimoniosSection></TestimoniosSection>
       <div className="flex flex-col items-center justify-center mb-10">
