@@ -1,4 +1,4 @@
-import { Award, Heart, Shield, Smile, Sparkles, Users } from "lucide-react";
+import { Award, Heart, Smile, Sparkles } from "lucide-react";
 import imagen from "../../assets/webp/Recurso 1.webp";
 import Image from "next/image";
 import diente from "../../assets/webp/sonrisa.webp";

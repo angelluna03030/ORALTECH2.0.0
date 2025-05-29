@@ -1,13 +1,5 @@
 import Image from "next/image";
-import facebook from "@/assets/webp/Recurso 10.webp";
-import instagram from "@/assets/webp/Recurso 9.webp";
-import x from "@/assets/webp/Recurso 8.webp";
-import tiktok from "@/assets/webp/Recurso 7.webp";
 import logo from "@/assets/webp/oraltech_logo_white.webp";
-import telefono from "@/assets/webp/Recurso 11.webp";
-import email from "@/assets/webp/Recurso 13.webp";
-import { Mail, MapPin, Phone, Smile } from "lucide-react";
-import Link from "next/link";
 
 export const Footer = () => {
   return (

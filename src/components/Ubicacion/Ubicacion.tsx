@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin, Phone, Clock, ArrowRight, Star, Award } from "lucide-react";
+import { MapPin, Phone, Clock, ArrowRight, Star } from "lucide-react";
 import { locations } from "./index";
 import placeholder from "../../assets/webp/placeholder.webp";
 export const DentalLocations = () => {

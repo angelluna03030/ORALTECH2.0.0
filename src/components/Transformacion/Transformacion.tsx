@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import imagen1 from "../../assets/webp/1-1.webp";
 import imagen2 from "../../assets/webp/1-2.webp";
+import Image from "next/image";
 
 export const BeforeAfterSlider = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -16,8 +17,13 @@ export const BeforeAfterSlider = () => {
       <div className="relative h-80 md:h-96 overflow-hidden">
         {/* Imagen "Después" (fondo) */}
         <div className="absolute inset-0">
-          <img
-            src={imagen2.src}
+          <Image
+          about="Después del tratamiento"
+           loading="lazy"
+         width={500}
+          height={500}
+          title="Después del tratamiento"
+          src={imagen2.src}
             alt="Después del tratamiento"
             className="w-full h-full object-cover"
           />
@@ -29,7 +35,11 @@ export const BeforeAfterSlider = () => {
           className="absolute inset-0 overflow-hidden"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <img
+          <Image
+            loading="lazy"
+            width={500}
+          height={500}
+          title="Antes del tratamiento"
             src={imagen1.src}
             alt="Antes del tratamiento"
             className="w-full h-full object-cover"

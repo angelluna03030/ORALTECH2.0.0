@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Imagenlogo from "../../assets/webp/oraltech_logo.webp";
 import Image from "next/image";
-import { Menu, Smile, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (

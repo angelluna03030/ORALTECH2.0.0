@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { InformacionData } from "./index";
-import Diente from "@/assets/webp/image.webp";
+
 import CountUp from "react-countup";
 
 export const Informacion = () => {

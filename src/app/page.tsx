@@ -1,10 +1,8 @@
 "use client";
 import { Header } from "@/components/Header";
-import ImagenDiente from "@/assets/webp/image.webp";
 import Image from "next/image";
 import { ComponenteServicios } from "@/components/ComponenteImagenes";
 import { Botones } from "@/components/Botones/Botones";
-import Sonrisa from "@/assets/webp/sonrisa.webp";
 import "@/styles/globals.css";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import { Informacion } from "@/components/Informacion";
@@ -35,14 +33,14 @@ export default function Home() {
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
       <Transformacionsetion />
-      <div className="w-full  px-4 sm:py-12 lg:py-16">
+      <div className="w-full  px-4  lg:py-16">
         <div className="container mx-auto max-w-7xl">
           {/* Layout responsivo usando Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Sección del texto */}
             <div className="text-center">
               <h1 className="text-[#28295F] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                "Atención profesional, cómoda y segura"
+                &quot;Atención profesional, cómoda y segura&quot;
               </h1>
             </div>
 
@@ -57,7 +55,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="flex flex-col items-center justify-center pt-40">
+      <section className="flex flex-col items-center justify-center ">
         <Image
           src={Banner}
           alt="Banner de OralTech"
@@ -75,7 +73,7 @@ export default function Home() {
       <hr className="bg-[#28295F] w-full absolute h-4 border-none z-10" />
 
       <TestimoniosSection></TestimoniosSection>
-      <div className="flex flex-col items-center justify-center my-16">
+      <div className="flex flex-col items-center justify-center mb-10">
         <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA"></Botones>
       </div>
       <WhatsAppWidget></WhatsAppWidget>

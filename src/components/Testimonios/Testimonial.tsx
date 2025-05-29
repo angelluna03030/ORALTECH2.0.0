@@ -1,14 +1,12 @@
 "use client"
 import {testimonios} from "./index"
-import { Play, Quote, ChevronLeft, ChevronRight } from "lucide-react"
+import {  Quote, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
-import placeholder from "../../assets/webp/placeholder.webp";
+
 export const TestimoniosSection = ()=> {
- const [videoActivo, setVideoActivo] = useState<string | null>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
   const sliderRef = useRef<HTMLDivElement>(null)
-
   // Detectar si es móvil
   useEffect(() => {
     const checkMobile = () => {

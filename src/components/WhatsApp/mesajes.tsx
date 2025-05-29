@@ -3,7 +3,7 @@
 import type React from "react";
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import Image from "next/image";
-import { X, Send, MessageCircle } from "lucide-react";
+import { Send } from "lucide-react";
 
 // Importa tus assets
 import IconoCarritoWhastApp from "../../assets/webp/whatsapp.webp";
@@ -14,7 +14,7 @@ import logo from "../../assets/webp/iconw.webp";
 interface WhatsAppWidgetProps {
   phoneNumber?: string;
   companyName?: string;
-  welcomeMessage?: string;
+
   position?: "bottom-right" | "bottom-left";
   className?: string;
   showNotificationDot?: boolean;
@@ -32,7 +32,6 @@ const CONSTANTS = {
 export const WhatsAppWidget = ({
   phoneNumber = "573224130747",
   companyName = "OralTech",
-  welcomeMessage = "",
   position = "bottom-right",
   className = "",
   showNotificationDot = false,
@@ -43,20 +42,18 @@ export const WhatsAppWidget = ({
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
-
   const inputRef = useRef<HTMLInputElement>(null);
   const chatRef = useRef<HTMLDivElement>(null);
 
   // Memoized values
-  const currentTime = useMemo(
-    () =>
-      new Date().toLocaleTimeString("es-ES", {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
-    [isOpen] // Regenerate when chat opens
-  );
-
+const currentTime = useMemo(
+  () =>
+    new Date().toLocaleTimeString("es-ES", {
+      hour: "2-digit",
+      minute: "2-digit",
+    }),
+  [] // La hora actual no depende de isOpen
+);
   const positionClasses = useMemo(
     () => ({
       button:
@@ -134,41 +131,36 @@ export const WhatsAppWidget = ({
       return newState;
     });
   }, [hasInteracted]);
+const handleSendMessage = useCallback(async () => {
+  if (!messageStats.canSend) return;
 
-  const handleSendMessage = useCallback(async () => {
-    if (!messageStats.canSend) return;
+  setIsLoading(true);
 
-    setIsLoading(true);
+  try {
+    const cleanMessage = message.trim();
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      cleanMessage
+    )}`;
 
-    try {
-      const cleanMessage = message.trim();
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-        cleanMessage
-      )}`;
+    const newWindow = window.open(
+      whatsappUrl,
+      "_blank",
+      "noopener,noreferrer"
+    );
 
-      // Open in new tab with enhanced security
-      const newWindow = window.open(
-        whatsappUrl,
-        "_blank",
-        "noopener,noreferrer"
-      );
-
-      if (!newWindow) {
-        // Fallback for popup blockers
-        window.location.href = whatsappUrl;
-      }
-
-      setMessage("");
-      setIsOpen(false);
-      setHasInteracted(true);
-    } catch (error) {
-      console.error("Error opening WhatsApp:", error);
-      // Could add toast notification here
-    } finally {
-      setIsLoading(false);
+    if (!newWindow) {
+      window.location.href = whatsappUrl;
     }
-  }, [message, phoneNumber, messageStats.canSend, hasInteracted]);
 
+    setMessage("");
+    setIsOpen(false);
+    setHasInteracted(true); // Solo se llama, no se lee
+  } catch (error) {
+    console.error("Error opening WhatsApp:", error);
+  } finally {
+    setIsLoading(false);
+  }
+}, [message, phoneNumber, messageStats.canSend]); // Removido hasInteracted
   const handleKeyPress = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
       if (e.key === "Enter" && !e.shiftKey) {
@@ -341,11 +333,12 @@ export const WhatsAppWidget = ({
                     onClick={handleSendMessage}
                     disabled={!messageStats.canSend}
                     className={`
+                     
                       flex h-8 w-8 items-center justify-center rounded-full
                       transition-all duration-200
                       ${
                         messageStats.canSend
-                          ? "bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-sm hover:shadow-md"
+                          ? "bg-[#25D366]  cursor-pointer hover:bg-[#20BA5A] text-white shadow-sm hover:shadow-md"
                           : "bg-gray-300 text-gray-500 cursor-not-allowed"
                       }
                       focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-1

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Play, Pause } from "lucide-react";
 import imagenbanner from "@/assets/webp/bannervideo.webp";
 export const Video =()=> {
@@ -59,96 +59,99 @@ export const Video =()=> {
     const width = rect.width;
     return Math.max(0, Math.min(100, (clickX / width) * 100));
   };
+interface MouseEventWithClient {
+  preventDefault(): void;
+  clientX: number;
+}
 
-  // Manejar click en la barra de progreso
-  const handleProgressClick = (e: { preventDefault?: any; clientX?: number; }) => {
-    e.preventDefault();
-    if (!videoRef.current || !duration) return;
+// Manejar click en la barra de progreso
+const handleProgressClick = (e: MouseEventWithClient) => {
+  e.preventDefault();
+  if (!videoRef.current || !duration) return;
 
-    const clickProgress = getProgressFromEvent(e);
-    const newTime = (clickProgress / 100) * duration;
-    
-    videoRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-    setProgress(clickProgress);
-  };
+  const clickProgress = getProgressFromEvent(e);
+  const newTime = (clickProgress / 100) * duration;
+  
+  videoRef.current.currentTime = newTime;
+  setCurrentTime(newTime);
+  setProgress(clickProgress);
+};
 
-  // Iniciar arrastre
-  const handleMouseDown = (e: { preventDefault: any; clientX?: number | undefined; }) => {
-    e.preventDefault();
-    setIsDragging(true);
-    handleProgressClick(e);
-  };
+// Iniciar arrastre
+const handleMouseDown = (e: MouseEventWithClient) => {
+  e.preventDefault();
+  setIsDragging(true);
+  handleProgressClick(e);
+};
 
-  // Durante el arrastre
-  const handleMouseMove = (e: { preventDefault?: any; clientX?: number; }) => {
-    if (!isDragging || !videoRef.current || !duration) return;
-    
-    e.preventDefault();
-    const newProgress = getProgressFromEvent(e);
-    const newTime = (newProgress / 100) * duration;
-    
-    setProgress(newProgress);
-    setCurrentTime(newTime);
-  };
+// Durante el arrastre
+const handleMouseMove = useCallback((e: MouseEventWithClient) => {
+  if (!isDragging || !videoRef.current || !duration) return;
+  
+  e.preventDefault();
+  const newProgress = getProgressFromEvent(e);
+  const newTime = (newProgress / 100) * duration;
+  
+  setProgress(newProgress);
+  setCurrentTime(newTime);
+}, [isDragging, duration]);
 
-  // Finalizar arrastre
-  const handleMouseUp = (e: { preventDefault?: any; clientX?: number; }) => {
-    if (!isDragging || !videoRef.current) return;
-    
-    e.preventDefault();
-    setIsDragging(false);
-    
-    const finalProgress = getProgressFromEvent(e);
-    const newTime = (finalProgress / 100) * duration;
-    
-    videoRef.current.currentTime = newTime;
-  };
+// Finalizar arrastre
+const handleMouseUp = useCallback((e: MouseEventWithClient) => {
+  if (!isDragging || !videoRef.current) return;
+  
+  e.preventDefault();
+  setIsDragging(false);
+  
+  const finalProgress = getProgressFromEvent(e);
+  const newTime = (finalProgress / 100) * duration;
+  
+  videoRef.current.currentTime = newTime;
+}, [isDragging, duration]);
 
-  // Efectos para manejar eventos globales de mouse
-  useEffect(() => {
-    if (isDragging) {
-      document.addEventListener('mousemove', handleMouseMove);
-      document.addEventListener('mouseup', handleMouseUp);
-      
-      return () => {
-        document.removeEventListener('mousemove', handleMouseMove);
-        document.removeEventListener('mouseup', handleMouseUp);
-      };
+// Efectos para manejar eventos globales de mouse
+useEffect(() => {
+  if (isDragging) {
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+    
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+  }
+}, [isDragging, handleMouseMove, handleMouseUp]);
+
+const togglePlay = async () => {
+  if (!videoRef.current) return;
+
+  setIsLoading(true);
+
+  try {
+    if (isPlaying) {
+      await videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      await videoRef.current.play();
+      setIsPlaying(true);
     }
-  }, [isDragging, duration]);
-
-  const togglePlay = async () => {
-    if (!videoRef.current) return;
-
-    setIsLoading(true);
-
-    try {
-      if (isPlaying) {
-        await videoRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        await videoRef.current.play();
-        setIsPlaying(true);
-      }
-    } catch (error) {
-      console.error("Error playing video:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleVideoEnd = () => {
-    setIsPlaying(false);
-    setProgress(0);
-    setCurrentTime(0);
-  };
-
-  const handleVideoError = () => {
+  } catch (error) {
+    console.error("Error playing video:", error);
+  } finally {
     setIsLoading(false);
-    console.error("Error loading video");
-  };
+  }
+};
 
+const handleVideoEnd = () => {
+  setIsPlaying(false);
+  setProgress(0);
+  setCurrentTime(0);
+};
+
+const handleVideoError = () => {
+  setIsLoading(false);
+  console.error("Error loading video");
+};
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="max-w-6xl w-full">
