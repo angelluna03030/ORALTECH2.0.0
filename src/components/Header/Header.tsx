@@ -3,6 +3,7 @@ import { useState } from "react";
 import Imagenlogo from "../../assets/webp/oraltech_logo.webp";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
@@ -22,30 +23,32 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-6 xl:space-x-8">
-            <a
-              href="#inicio"
+            <Link
+              href="/"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
               Inicio
-            </a>
+            </Link>
             <a
               href="#servicios"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
               Servicios
             </a>
-            <a
+            <Link
               href="#resultados"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
               Resultados
-            </a>
-            <a
-              href="#nosotros"
+            </Link>
+            <Link
+              href="/about"
+              id="nosotros"
+              
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
               Nosotros
-            </a>
+            </Link>
             <a
               href="#contacto"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"

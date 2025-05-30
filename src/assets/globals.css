@@ -30,3 +30,8 @@ body {
 p {
 position: absolute;
 }
+
+
+.imagen_banner{
+  mask-image: linear-gradient(black 70%, transparent );
+}
