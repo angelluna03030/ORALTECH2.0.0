@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ComponenteServicios } from "@/components/ComponenteImagenes";
 import { Botones } from "@/components/Botones/Botones";
 import "@/styles/globals.css";
+import "../assets/globals.css";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import { Informacion } from "@/components/Informacion";
 import { DentalLocations } from "@/components/Ubicacion";

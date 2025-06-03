@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Award, Badge, Clock, Heart, Users } from "lucide-react";
 import bannersobre from "../../assets/webp/banner_sobre_nosotros_short.webp";
 import { TestimoniosSection } from "@/components/Testimonios";
+import placeholder from "../../assets/webp/placeholder.webp";
 export const Data = [
   {
     id: 1,
@@ -49,9 +50,14 @@ export default function About() {
   {/* Hero Image Section */}
   <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
     <Image
-      src={bannersobre}
+      src={bannersobre || placeholder.src}
       alt="Equipo del consultorio odontológico"
       fill
+      
+      sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 100vw"
+      style={{ objectFit: "cover" }}
+
+
       className="object-cover object-center imagen_banner"
       priority
     />

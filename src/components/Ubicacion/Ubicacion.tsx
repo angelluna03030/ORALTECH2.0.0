@@ -90,7 +90,7 @@ export const DentalLocations = () => {
                   <div className="flex items-start gap-4 group/item cursor-pointer">
                     <div className="w-10 h-10  bg-[#28295F] rounded-xl flex items-center justify-center flex-shrink-0 group-hover/item:bg-[#46BEF0] transition-colors">
                       <MapPin
-                        className="w-5 h-5 text-teal-600 text-[#FFFFFFFF]  "
+                        className="w-5 h-5  text-[#FFFFFFFF]  "
                         color="#FFFFFFFF"
                       />
                     </div>
@@ -106,13 +106,13 @@ export const DentalLocations = () => {
                   <div className="flex items-start gap-4 group/item cursor-pointer">
                     <div className="w-10 h-10 bg-[#28295F] rounded-xl flex items-center justify-center flex-shrink-0 group-hover/item:bg-[#46BEF0] transition-colors">
                       <Phone
-                        className="w-5 h-5 text-emerald-600"
+                        className="w-5 h-5"
                         color="#FFFFFFFF"
                       />
                     </div>
                     <div>
                       <p className="text-slate-800 font-medium">Teléfono</p>
-                      <p className="text-slate-600 mt-5 text-sm hover:text-emerald-600 transition-colors mb-5">
+                      <p className="text-slate-600 mt-5 text-sm   mb-5">
                         {location.phone}
                       </p>
                     </div>

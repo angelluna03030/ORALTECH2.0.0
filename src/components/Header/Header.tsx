@@ -50,7 +50,7 @@ export const Header = () => {
               Nosotros
             </Link>
             <a
-              href="#contacto"
+              href="/acount"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
               Contacto
