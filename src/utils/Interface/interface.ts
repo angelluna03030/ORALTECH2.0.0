@@ -26,3 +26,12 @@ export interface ComponenteImagenesPropsInformacion {
     descripcion: string;
     cantidad: number;
 }
+
+export interface StatItem {
+  src: string
+  cantidad: number
+  suffix: string
+  titulo: string
+  alt: string
+    descripcion?: string
+}

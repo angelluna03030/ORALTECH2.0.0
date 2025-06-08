@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import imagen1 from "../../assets/webp/1-1.webp";
 import imagen2 from "../../assets/webp/1-2.webp";
@@ -27,7 +27,7 @@ export const BeforeAfterSlider = () => {
             alt="Después del tratamiento"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r "></div>
         </div>
 
         {/* Imagen "Antes" (se recorta según el slider) */}
@@ -44,24 +44,24 @@ export const BeforeAfterSlider = () => {
             alt="Antes del tratamiento"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-orange-500/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r "></div>
         </div>
 
         {/* Línea divisoria */}
         <div
-          className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10"
+          className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg z-10"
           style={{ left: `${sliderPosition}%` }}
         >
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
-            <ArrowRight className="w-4 h-4 text-gray-600" />
+            <ArrowLeft className="w-4 h-4 text-gray-600" />
           </div>
         </div>
 
         {/* Labels */}
-        <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+        <div className="absolute top-4 left-4 bg-white text-black px-3 py-1 rounded-full text-sm font-medium">
           Antes
         </div>
-        <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+        <div className="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-sm font-medium">
           Después
         </div>
 

@@ -1,28 +1,31 @@
-import { ComponenteImagenesPropsInformacion } from "@/utils/Interface/interface";
+import { StatItem } from "@/utils/Interface/interface";
 import Imagenes3 from "@/assets/webp/Recurso 3.webp";
 import Imagenes2 from "@/assets/webp/Recurso 1.webp";
 import Imagenes1 from "@/assets/webp/Recurso 2.webp";
 
-export const InformacionData: ComponenteImagenesPropsInformacion[] = [
+export const InformacionData: StatItem[] = [
   {
     src: Imagenes3.src,
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: "Años de Experiencia",
     cantidad: 10,
+     suffix: "",
   },
   {
     src: Imagenes2.src,
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: " Servicios Realizados",
-    cantidad: 13068,
+    cantidad: 13,
+         suffix: "K",
   },
   {
     src: Imagenes1.src,
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: " Seguidores en Redes Sociales",
-    cantidad: 13000,
+         suffix: "K",
+    cantidad: 13 ,
   },
 ];
