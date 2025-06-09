@@ -119,7 +119,7 @@ export const ComponenteServicios = () => {
                         <button
 
   key={service.id ? service.id : ""}
-                          className="absolute cursor-pointer top-4 md:top-8 right-4 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95 duration-700 delay-600"
+                          className="absolute cursor-pointer top-4 md:top-8 right-4 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95  delay-600"
                     onClick={() => setHoveredService(null)}
                         >
                           <svg
