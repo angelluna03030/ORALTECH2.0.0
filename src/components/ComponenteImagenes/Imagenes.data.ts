@@ -28,14 +28,14 @@ export const servicios: ComponenteImagenesProps[] = [
     descripcion: "Detalles que transforman tu sonrisa",
   },
   {
-    id: 3,
+    id: 4,
     src: LimpiezaDental.src,
     alt: "Procedimiento profesional de limpieza dental",
     titulo: "Limpieza Dental",
     descripcion: "Higiene profesional para una boca sana",
   },
   {
-    id: 4,
+    id: 5,
     src: Blanquimineto.src,
     alt: "Procedimiento de blanqueamiento dental profesional",
     titulo: "Blanqueamiento",
