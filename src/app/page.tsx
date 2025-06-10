@@ -7,7 +7,7 @@ import "@/styles/globals.css";
 import "../assets/globals.css";
 import Banner from "@/assets/webp/Banner Sobre Nosotros.webp";
 import { Informacion } from "@/components/Informacion";
-import { DentalLocations } from "@/components/Ubicacion";
+import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
 import { Transformacionsetion } from "@/components/Transformacion";
 import { Hero } from "@/components/Hero/Hero";
@@ -67,7 +67,7 @@ export default function Home() {
         ></Image>
       </section>
       <Informacion></Informacion>
-      <DentalLocations></DentalLocations>
+      <Ubicacion></Ubicacion>
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>

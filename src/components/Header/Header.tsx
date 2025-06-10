@@ -58,7 +58,13 @@ export const Header = () => {
 
           <div className="flex items-center space-x-3">
             <button className="hidden sm:flex items-center justify-center  bg-[#28295F]  text-white font-semibold rounded-lg cursor-pointer h-10 w-40 shadow-lg transition-all  text-sm md:text-base px-6">
-              Agendar Cita
+              <a
+                href="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar Cita
+              </a>
             </button>
 
             {/* Mobile menu button */}
@@ -98,20 +104,26 @@ export const Header = () => {
                 Resultados
               </a>
               <Link
-            href="/about"
+                href="/about"
                 className="text-white hover:text-[#28295F] transition-colors font-medium py-2"
               >
                 Nosotros
               </Link>
-               <Link
-            href="/acount"
+              <Link
+                href="/acount"
                 className="text-white hover:text-[#28295F] transition-colors font-medium py-2"
               >
-                 Contacto
+                Contacto
               </Link>
-              <button className="sm:hidden bg-[#28295F] shadow-lg mt-3 text-white items-center justify-center font-semibold rounded-lg cursor-pointer h-10 w-40  transition-all  text-sm md:text-base px-6">
-                Agendar Cita
-              </button>
+              <a
+                href="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="sm:hidden bg-[#28295F] shadow-lg mt-3 text-white items-center justify-center font-semibold rounded-lg cursor-pointer h-10 w-40 transition-all text-sm md:text-base px-6">
+                  Agendar Cita
+                </button>
+              </a>
             </nav>
           </div>
         )}
