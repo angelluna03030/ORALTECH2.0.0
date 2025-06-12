@@ -12,7 +12,7 @@ export const Transformacionsetion = () => {
               <span>Resultados comprobados</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#28295F]">
-              Transformaciones Reales
+             Transformación en OralTech
             </h2>
             <div className="flex items-center justify-center ">
               <p className="text-center text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl px-4">

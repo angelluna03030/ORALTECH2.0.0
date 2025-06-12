@@ -12,6 +12,7 @@ export const servicios: ComponenteImagenesProps[] = [
     alt: "Diseño de Sonrisa",
     titulo: "Diseño de Sonrisa",
     descripcion: "Mejora la estética de tu sonrisa",
+    
   },
   {
     id: 2,

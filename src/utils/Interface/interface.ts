@@ -4,11 +4,12 @@ export interface BotonesProps {
   className?: string; // Propiedad opcional para clases personalizadas
 }
 export interface ComponenteImagenesProps {
+    id?: number; // Propiedad opcional para identificar el componente
     src: string;
     alt: string;
     titulo: string;
     descripcion: string;
-    direccion_google_maps: string;
+    direccion_google_maps?: string;
 }
 
 export interface ComponenteImagenesPropsTransicion {

@@ -37,7 +37,7 @@ export const Ubicacion =()=>{
             >
               <div className="aspect-square relative rounded-4xl overflow-hidden w-full h-full">
                 <Link
-                href={servicio.direccion_google_maps}
+                href={servicio.direccion_google_maps ?? ""}
                 >
                 <Image
                   src={servicio.src}

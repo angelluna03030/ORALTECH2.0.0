@@ -48,12 +48,12 @@ export const Header = () => {
             >
               Nosotros
             </Link>
-            <a
+            <Link
               href="/acount"
               className="text-white hover:text-[#28295F] transition-colors font-medium"
             >
               Contacto
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center space-x-3">
@@ -115,8 +115,9 @@ export const Header = () => {
               >
                 Contacto
               </Link>
-              <a
-                href="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
+              <a        
+              
+              href="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
                 target="_blank"
                 rel="noopener noreferrer"
               >

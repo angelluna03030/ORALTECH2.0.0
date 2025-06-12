@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import imagen1 from "../../assets/webp/1-1.webp";
 import imagen2 from "../../assets/webp/1-2.webp";

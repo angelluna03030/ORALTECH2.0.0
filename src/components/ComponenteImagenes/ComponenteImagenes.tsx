@@ -22,11 +22,7 @@ export const ComponenteServicios = () => {
         <h2 className="text-4xl md:text-5xl font-semibold text-[#28295F] mb-4">
           Nuestros Servicios
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Explora nuestra variedad de tratamientos dentales, cuidadosamente
-          diseñados con tecnología de vanguardia y un enfoque en la calidad para
-          brindarte la mejor atención y cuidar tu sonrisa.
-        </p>
+      
       </div>
       <section
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
@@ -42,7 +38,7 @@ export const ComponenteServicios = () => {
           <div
             key={service.id}
             className="group relative  rounded-2xl overflow-hidden shadow-sm hover:shadow-none transition-all duration-700 ease-out cursor-pointer"
-            onClick={() => setHoveredService(service.id)}
+            onClick={() => setHoveredService(service.id ?? null)}
           >
             <figure
               key={service.id}
