@@ -21,7 +21,6 @@ export const Transformacionsetion = () => {
               </p>
             </div>
           </div>
-
           <div className="max-w-4xl mx-auto">
             <BeforeAfterSlider />
           </div>

@@ -10,7 +10,6 @@ import { Informacion } from "@/components/Informacion";
 import { Ubicacion } from "@/components/Ubicacion";
 import { Footer } from "@/components/Footer";
 import { Transformacionsetion } from "@/components/Transformacion";
-import { Hero } from "@/components/Hero/Hero";
 import { Video } from "@/components/video/Video";
 import { WhatsAppWidget } from "@/components/WhatsApp";
 import { TestimoniosSection } from "@/components/Testimonios";
@@ -18,10 +17,10 @@ export default function Home() {
   return (
     <div className="">
       <Header />
-      <section className="flex flex-col items-center justify-center ">
-        <Hero></Hero>
-      </section>
       <Video></Video>
+      <br />
+      <br />
+      <br />
 
       <ComponenteServicios></ComponenteServicios>
       <p className="flex m-auto items-center justify-center mb-10 text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
@@ -71,7 +70,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center my-16">
         <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"></Botones>
       </div>
-          <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
+      <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
 
       <TestimoniosSection></TestimoniosSection>
       <div className="flex flex-col items-center justify-center mb-10">

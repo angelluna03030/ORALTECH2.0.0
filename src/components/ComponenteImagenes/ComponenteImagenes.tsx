@@ -19,7 +19,7 @@ export const ComponenteServicios = () => {
   return (
     <>
       <div className="text-center mb-28 px-4 w-full max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-semibold text-[#28295F] mb-4">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#28295F] mb-2">
           Nuestros Servicios
         </h2>
       
@@ -37,7 +37,7 @@ export const ComponenteServicios = () => {
         {servicios.map((service) => (
           <div
             key={service.id}
-            className="group relative  rounded-2xl overflow-hidden shadow-sm hover:shadow-none transition-all duration-700 ease-out cursor-pointer"
+            className="group relative  rounded-2xl overflow-hidden ease-out cursor-pointer"
             onClick={() => setHoveredService(service.id ?? null)}
           >
             <figure
