@@ -8,6 +8,7 @@ import bannersobre from "../../assets/webp/banner_sobre_nosotros_short.webp";
 import { TestimoniosSection } from "@/components/Testimonios";
 import placeholder from "../../assets/webp/placeholder.webp";
 import { Metadata } from "next";
+import { Video } from "@/components/video/Video";
 
 export const metadata: Metadata = {
   // Basic Metadata
@@ -179,31 +180,9 @@ export default function About() {
       <Header />
    <section className="w-full bg-gradient-to-b from-slate-50 to-white">
   {/* Hero Image Section */}
-  <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
-    <Image
-      src={bannersobre || placeholder.src}
-      alt="Equipo del consultorio odontológico"
-      fill
-      
-      sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 100vw"
-      style={{ objectFit: "cover" }}
-
-
-      className="object-cover object-center imagen_banner"
-      priority
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-    <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 md:bottom-8 md:left-8 md:right-8 text-white">
-      <Badge className="mb-2 sm:mb-3 md:mb-4 bg-transparent text-white  text-xs sm:text-sm">
-        Sobre Nosotros
-      </Badge>
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 leading-tight text-white">
-        Cuidando tu sonrisa con{" "}
-        <span className="text-[#28295F]">excelencia</span>
-      </h1>
-    </div>
-  </div>
-
+ 
+ <Video></Video>
+    
   {/* Mission Section */}
   <div className="container mx-auto py-10 sm:py-12 md:py-16">
     <div className="text-center  max-w-4xl mx-auto">
