@@ -12,6 +12,7 @@ import bannersobre from "../../assets/webp/banner_sobre_nosotros_short.webp";
 import Image from "next/image";
 import imagnes from "@/assets/webp/iconw.webp";
 import { Metadata } from "next";
+import { Video } from "@/components/video/Video";
 
 export const metadata: Metadata = {
   // Basic Metadata
@@ -218,28 +219,9 @@ const whatsappNumber2:string = "+573016184618"; // Formato: código país + núm
     <>
       <Header />
       <section className="w-full">
+      <Video></Video>
         {/* Hero Image Section */}
-        <div className=" relative h-[60vh] md:h-[70vh] lg:h-[80vh] w-full overflow-hidden">
-          <Image
-            src={bannersobre || placeholder.src}
-            alt="Equipo del consultorio odontológico"
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 100vw"
-            style={{ objectFit: "cover" }}
-            className="object-cover object-center imagen_banner"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-          <div className="absolute bottom-8 left-8 right-8 text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-4">
-              Contáctanos
-            </h1>
-            <p className="text-lg md:text-xl font-light max-w-2xl">
-              Estamos aquí para cuidar de tu sonrisa. Agenda tu cita y descubre
-              la diferencia de un cuidado dental personalizado.
-            </p>
-          </div>
-        </div>
+      
         <div className="bg-gray-50 py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
