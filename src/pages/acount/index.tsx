@@ -22,8 +22,8 @@ export default function Contact() {
   });
 
   // Número de WhatsApp del consultorio (cambiar por el número real)
-  const whatsappNumber = "+573224130747"; // Formato: código país + número sin espacios ni símbolos
-const whatsappNumber2 = "+573016184618"; // Formato: código país + número sin espacios ni símbolos
+  const whatsappNumber:string = "+573224130747"; // Formato: código país + número sin espacios ni símbolos
+const whatsappNumber2:string = "+573016184618"; // Formato: código país + número sin espacios ni símbolos
   const handleinputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -344,7 +344,8 @@ const whatsappNumber2 = "+573016184618"; // Formato: código país + número sin
                       <button
                         onClick={() =>
                           window.open(
-                            `https://wa.me/${whatsappNumber}`,
+                             `https://wa.me/${whatsappNumber}?text=Hola%2C+vengo+de+la+página+web+y+me+gustaría+agendar+una+cita.`,
+                           
                             "_blank"
                           )
                         }
@@ -416,7 +417,7 @@ const whatsappNumber2 = "+573016184618"; // Formato: código país + número sin
                       <button
                         onClick={() =>
                           window.open(
-                            `https://wa.me/${whatsappNumber2}`,
+                            `https://wa.me/${whatsappNumber2}?text=Hola%2C+vengo+de+la+página+web+y+me+gustaría+agendar+una+cita.`,
                             "_blank"
                           )
                         }
