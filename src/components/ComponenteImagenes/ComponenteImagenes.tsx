@@ -3,6 +3,7 @@ import Image from "next/image";
 import { servicios } from "./index";
 import { useState } from "react";
 import placeholder from "../../assets/webp/placeholder.webp";
+import { GaleriaImagenes } from "../GaleriaSwiper/GaleriaMovimiento";
 export const ComponenteServicios = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   // Función para cerrar el modal
@@ -10,19 +11,16 @@ export const ComponenteServicios = () => {
     e.stopPropagation();
     setHoveredService(null);
   };
-
   // Función para prevenir que se cierre al hacer clic en el contenido del modal
   const handleModalContentClick = (e: { stopPropagation: () => void }) => {
     e.stopPropagation();
   };
-
   return (
     <>
       <div className="text-center mb-28 px-4 w-full max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-semibold text-[#28295F] mb-2">
           Nuestros Servicios
         </h2>
-      
       </div>
       <section
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
@@ -59,53 +57,69 @@ export const ComponenteServicios = () => {
               </div>
             </figure>
             {hoveredService === service.id && (
+              // Modal mejorado
               <div
                 key={service.id ? service.id : ""}
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4"
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4"
               >
                 <div
-                  className="relative w-full max-w-7xl h-full max-h-[90vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12"
-                  onClick={handleModalContentClick} // Prevenir cierre al hacer clic en el contenido
+                  className="relative w-full max-w-7xl h-full max-h-[95vh] flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8"
+                  onClick={handleModalContentClick}
                 >
-                  {/* Imagen a la izquierda */}
-                  <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-[70vh] rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl animate-in slide-in-from-left-8 duration-700 bg-white">
-                    <Image
-                      src={service.src}
-                      alt={service.alt}
-                      loading="lazy"
-                      decoding="async"
-                      title={service.alt}
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
-                    />
+                  {/* Contenedor de la galería mejorado */}
+                  <div className="relative w-full lg:w-1/2 h-80 md:h-96 lg:h-[80vh] flex items-center justify-center">
+                    <GaleriaImagenes imagenes={service.imagenes || []} />
                   </div>
+
                   {/* Contenido a la derecha */}
-                  <div className="w-full lg:w-1/2 text-white flex flex-col justify-center animate-in slide-in-from-right-8 duration-700 delay-200">
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl pb-20 xl:text-6xl font-light mb-4 md:mb-6 animate-in slide-in-from-bottom-4 duration-700 delay-300">
+                  <div className="w-full lg:w-1/2 text-white flex flex-col justify-center animate-in slide-in-from-right-8 duration-700 delay-200 px-4 lg:px-8">
+                    {/* Título con altura adaptativa */}
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light mb-4 md:mb-6 animate-in slide-in-from-bottom-4 duration-700 delay-300 leading-tight min-h-fit">
                       {service.titulo}
                     </h3>
-                    <p className="text-base md:text-lg  lg:text-xl xl:text-2xl font-light leading-relaxed mb-6 md:mb-8 text-gray-200 animate-in slide-in-from-bottom-4 duration-700 delay-400">
-                      {service.descripcion}
-                    </p>
-                    {/* Botones de acción */}
-                    <div className="flex font-semibold text-base md:text-lg flex-col sm:flex-row gap-4 animate-in slide-in-from-bottom-4 duration-700 delay-500">
-                      <button
-                        key={`close-${service.id}`}
-                        onClick={closeModal}
-                        className="bg-[#28295F] cursor-pointer text-white hover:bg-[#28295F] px-6 md:px-8 py-3 md:py-4 rounded-lg  transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+
+                    {/* Descripción con altura adaptativa y límites mínimos/máximos */}
+                    <div className="min-h-[4rem] max-h-none mb-6 md:mb-8 animate-in slide-in-from-bottom-4 duration-700 delay-400">
+                      <p className="text-sm md:text-base lg:text-lg xl:text-xl font-light leading-relaxed text-gray-200 break-words hyphens-auto">
+                        {service.descripcion}
+                      </p>
+                    </div>
+
+                    {/* Botones de acción con espaciado consistente */}
+                    <div className="flex font-semibold text-sm md:text-base flex-col sm:flex-row gap-4 animate-in slide-in-from-bottom-4 duration-700 delay-500 mt-auto">
+                      <a
+                        href="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Agendar Cita
-                      </button>
-                      <button className="bg-white/20 cursor-pointer backdrop-blur-sm hover:bg-white/30 px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 border border-[#46BEF0] text-[#46BEF0] ">
-                        Más información
-                      </button>
+                        <button
+                          key={`close-${service.id}`}
+                          onClick={closeModal}
+                          className="bg-[#28295F] cursor-pointer text-white hover:bg-[#1f2052] px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap"
+                        >
+                          Cita en Cucuta
+                        </button>
+                      </a>
+
+                      <a
+                        href="https://wa.me/573016184618?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          key={`close-${service.id}`}
+                          onClick={closeModal}
+                          className="bg-[#28295F] cursor-pointer text-white hover:bg-[#1f2052] px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap"
+                        >
+                          Cita en Medellín
+                        </button>
+                      </a>
                     </div>
                   </div>
-                  {/* Botón cerrar */}
+                  {/* Botón cerrar mejorado */}
                   <button
                     key={service.id ? service.id : ""}
-                    className="absolute cursor-pointer top-4 md:top-8 right-4 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95  delay-600"
+                    className="absolute cursor-pointer z-10 top-4 md:top-6 right-4 md:right-6 w-10 h-10 md:w-12 md:h-12 bg-black/40 backdrop-blur-sm hover:bg-black/60 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95 delay-600 hover:scale-110"
                     onClick={() => setHoveredService(null)}
                   >
                     <svg

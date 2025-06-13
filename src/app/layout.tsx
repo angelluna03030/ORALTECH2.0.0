@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "../assets/globals.css";
-
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 export const metadata: Metadata = {
   // Basic Metadata
   title: "OralTech",

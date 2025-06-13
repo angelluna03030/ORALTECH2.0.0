@@ -28,7 +28,7 @@ export default function Home() {
         “Atención profesional, cómoda y segura”
       </p>
       <div className="flex flex-col items-center justify-center py-40">
-        <Botones text="AGENDA TU CITA" url="/AGENDA TU CITA"></Botones>
+        <Botones text="VER MAS SERVICIOS" url="/servicios"></Botones>
       </div>
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />

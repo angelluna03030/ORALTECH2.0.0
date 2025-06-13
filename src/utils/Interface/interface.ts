@@ -10,6 +10,7 @@ export interface ComponenteImagenesProps {
     titulo: string;
     descripcion: string;
     direccion_google_maps?: string;
+    imagenes?: string[]; // Lista de imágenes opcional para galerías
 }
 
 export interface ComponenteImagenesPropsTransicion {
