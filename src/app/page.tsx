@@ -33,28 +33,27 @@ export default function Home() {
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
       <Transformacionsetion />
-      <div className="w-full  px-4  lg:py-16">
-        <div className="container mx-auto max-w-7xl">
+    
+     
           {/* Layout responsivo usando Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Sección del texto */}
-            <div className="text-center">
-              <h1 className="text-[#28295F] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                &quot;Atención profesional, cómoda y segura&quot;
-              </h1>
-            </div>
+ <div className="grid grid-cols-1 sm:pl-10 pr-1 lg:grid-cols-2 gap-8 w-full lg:gap-12 items-center justify-center text-center ">
+  {/* Sección del texto */}
+  <div className="text-center w-full lg:w-auto ">
+    <h1 className="text-[#28295F] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+      &quot;Atención profesional, cómoda y segura&quot;
+    </h1>
+  </div>
 
-            {/* Sección del botón */}
-            <div className="flex justify-center">
-              <Botones
-                text="RESERVA TU CONSULTA"
-                url="/AGENDA TU CITA"
-                className="w-full sm:w-auto text-sm sm:text-base"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+  {/* Sección del botón */}
+  <div className=" justify-center">
+    <Botones
+      text="RESERVA TU CONSULTA"
+      url="/AGENDA TU CITA"
+      className="w-full sm:w-auto text-sm sm:text-base max-w-xs"
+    />
+  </div>
+</div>
+    
       <section className="flex flex-col items-center justify-center ">
         <Image
           src={Banner}
