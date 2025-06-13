@@ -36,4 +36,7 @@ export interface StatItem {
   titulo: string
   alt: string
     descripcion?: string
+  width?: string
+  height?: string
+  
 }

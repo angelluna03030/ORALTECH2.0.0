@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import "../../assets/globals.css";
 import placeholder from "../../assets/webp/placeholder.webp";
-import bannersobre from "../../assets/webp/banner_sobre_nosotros_short.webp";
+
 import Image from "next/image";
 import imagnes from "@/assets/webp/iconw.webp";
 import { Metadata } from "next";

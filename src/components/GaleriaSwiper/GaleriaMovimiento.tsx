@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import imagen_No_funtion from "../../assets/webp/placeholder.webp";
 
 interface GaleriaImagenesProps {
   imagenes: string[] | undefined;
@@ -69,9 +68,7 @@ export const GaleriaImagenes: React.FC<GaleriaImagenesProps> = ({
                 src={`${imagen}`}
                 alt={`Imagen ${index + 1} de la galería`}
                 title={`Imagen ${index + 1} de la galería`}
-                onError={(e: any) => {
-                  (e.target as HTMLImageElement).src = imagen_No_funtion.src;
-                }}
+               
               />
               {/* Overlay sutil */}
             </div>

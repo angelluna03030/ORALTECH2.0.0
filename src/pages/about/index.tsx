@@ -2,11 +2,11 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { WhatsAppWidget } from "@/components/WhatsApp";
 import "../../assets/globals.css";
-import Image from "next/image";
-import { Award, Badge, Clock, Heart, Users } from "lucide-react";
-import bannersobre from "../../assets/webp/banner_sobre_nosotros_short.webp";
+
+import { Award,  Clock, Heart, Users } from "lucide-react";
+
 import { TestimoniosSection } from "@/components/Testimonios";
-import placeholder from "../../assets/webp/placeholder.webp";
+
 import { Metadata } from "next";
 import { Video } from "@/components/video/Video";
 
