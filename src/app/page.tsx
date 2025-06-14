@@ -13,21 +13,21 @@ import { Transformacionsetion } from "@/components/Transformacion";
 import { Video } from "@/components/video/Video";
 import { WhatsAppWidget } from "@/components/WhatsApp";
 import { TestimoniosSection } from "@/components/Testimonios";
+import { DentalServices } from "@/components/ComponenteImagenes/ComponenIcon";
 export default function Home() {
   return (
     <div className="">
       <Header />
       <Video/>
       <br />
-      <br />
-      <br />
+    
       <ComponenteServicios></ComponenteServicios>
       <p className="flex m-auto items-center justify-center mb-10 text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
         {" "}
         “Atención profesional, cómoda y segura”
       </p>
       <div className="flex flex-col items-center justify-center py-40">
-        <Botones text="VER MAS SERVICIOS" url="/servicios"/>
+        <DentalServices></DentalServices>
       </div>
 
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:pl-10 pr-1 lg:grid-cols-2 gap-8 w-full lg:gap-12 items-center justify-center text-center ">
         {/* Sección del texto */}
         <div className="text-center w-full lg:w-auto ">
-          <h1 className="text-[#28295F] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+          <h1 className="text-[#28295F] text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight">
             &quot;Atención profesional, cómoda y segura&quot;
           </h1>
         </div>

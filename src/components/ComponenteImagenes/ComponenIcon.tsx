@@ -1,72 +1,64 @@
 "use client";
 import Image from "next/image";
-import { servicios } from "./index";
+import { services } from "./Imagenes.data";
 import { useState } from "react";
-import placeholder from "../../assets/webp/placeholder.webp";
 import { GaleriaImagenes } from "../GaleriaSwiper/GaleriaMovimiento";
-import ImageneServicios from "@/assets/webp/Recurso 1@4x-8.webp"
-export const ComponenteServicios = () => {
+
+export const DentalServices = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
+  
   // Función para cerrar el modal
   const closeModal = (e: { stopPropagation: () => void }) => {
     e.stopPropagation();
     setHoveredService(null);
   };
+  
   // Función para prevenir que se cierre al hacer clic en el contenido del modal
   const handleModalContentClick = (e: { stopPropagation: () => void }) => {
     e.stopPropagation();
   };
+
+  // Encontrar el servicio seleccionado
+  const selectedService = services.find(service => service.id === hoveredService);
+
   return (
-    <>
-      <div className="text-center  px-4 w-full max-w-3xl mx-auto">
-        <div className="flex justify-center w-full my-5">
-              <Image
-                src={ImageneServicios}
-                alt="Imagen de Servicios"
-                className="rounded-lg w-full h-auto object-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
-                priority
-              />
-            </div>
-      </div>
-      <section
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
-        style={{
-          justifyContent: "space-evenly",
-          flexDirection: "row",
-          alignItems: "center",
-          display: "flex",
-          flexWrap: "wrap",
-        }}
-      >
-        {servicios.map((service) => (
+    <div className="w-full max-w-4xl mx-auto p-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {services.map((service, index) => (
           <div
-            key={service.id}
-            className="group relative  rounded-2xl overflow-hidden ease-out cursor-pointer"
+            key={`service-${service.id || index}`}
+            className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-300 cursor-pointer"
             onClick={() => setHoveredService(service.id ?? null)}
           >
-            <figure
-              key={service.id}
-              className="relative w-full max-w-sm overflow-hidden group cursor-pointer m-auto flex flex-col items-center justify-center"
+            <div
+              className="w-20 h-20 rounded-full flex items-center justify-center mb-4 group-hover:shadow-lg transition-shadow duration-300"
+              style={{ backgroundColor: "#28295F" }}
             >
-              <div className="aspect-square relative rounded-4xl overflow-hidden w-full h-full">
-                <Image
-                  src={service.src || placeholder}
-                  alt={service.alt}
-                  loading="lazy"
-                  decoding="async"
-                  title={service.alt}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                {/* Gradiente superpuesto para mejorar la legibilidad del texto */}
-              </div>
-            </figure>
-            {hoveredService === service.id && (
-              // Modal mejorado
-             <div
-  key={service.id ? service.id : ""}
+              <Image
+                width={500}
+                height={500}
+                title={service.titulo}
+                src={service.src}
+                alt={`Icon servicios ${service.alt}`}
+                className="w-12 h-12 text-white"
+              />
+            </div>
+
+            <h3
+              className="text-lg font-semibold"
+              style={{ color: "#28295F" }}
+            >
+              {service.titulo}
+            </h3>
+          </div>
+        ))}
+      </div>
+
+      {/* Modal fuera del map */}
+      {hoveredService !== null && selectedService && (
+       <div
   className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4 overflow-y-auto"
+  onClick={() => setHoveredService(null)}
 >
   <div
     className="relative w-full max-w-7xl min-h-[400px] max-h-[95vh] flex flex-col lg:flex-row items-stretch justify-center gap-6 lg:gap-8 my-auto"
@@ -74,7 +66,7 @@ export const ComponenteServicios = () => {
   >
     {/* Contenedor de la galería */}
     <div className="relative w-full lg:w-1/2 h-80 md:h-96 lg:min-h-[400px] lg:max-h-[80vh] flex items-center justify-center flex-shrink-0">
-      <GaleriaImagenes imagenes={service.imagenes || []} />
+      <GaleriaImagenes imagenes={selectedService.imagenes || []} />
     </div>
 
     {/* Contenido a la derecha con flex layout */}
@@ -84,13 +76,13 @@ export const ComponenteServicios = () => {
       <div className="flex-grow flex flex-col justify-center py-4">
         {/* Título */}
         <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light mb-4 md:mb-6 animate-in slide-in-from-bottom-4 duration-700 delay-300 leading-tight">
-          {service.titulo}
+          {selectedService.titulo}
         </h3>
 
         {/* Descripción con scroll si es necesario */}
         <div className="flex-grow mb-6 md:mb-8 animate-in slide-in-from-bottom-4 duration-700 delay-400 overflow-y-auto">
           <p className="text-sm md:text-base lg:text-lg xl:text-xl font-light leading-relaxed text-gray-200 break-words hyphens-auto">
-            {service.descripcion}
+            {selectedService.descripcion}
           </p>
         </div>
       </div>
@@ -104,7 +96,6 @@ export const ComponenteServicios = () => {
           className="flex-1"
         >
           <button
-            key={`cucuta-${service.id}`}
             onClick={closeModal}
             className="w-full bg-[#28295F] cursor-pointer text-white hover:bg-[#1f2052] px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap"
           >
@@ -119,7 +110,6 @@ export const ComponenteServicios = () => {
           className="flex-1"
         >
           <button
-            key={`medellin-${service.id}`}
             onClick={closeModal}
             className="w-full bg-[#28295F] cursor-pointer text-white hover:bg-[#1f2052] px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap"
           >
@@ -131,7 +121,6 @@ export const ComponenteServicios = () => {
 
     {/* Botón cerrar */}
     <button
-      key={`close-${service.id}`}
       className="absolute cursor-pointer z-10 top-4 md:top-6 right-4 md:right-6 w-10 h-10 md:w-12 md:h-12 bg-black/40 backdrop-blur-sm hover:bg-black/60 rounded-full flex items-center justify-center text-white transition-all duration-300 animate-in zoom-in-95 delay-600 hover:scale-110"
       onClick={() => setHoveredService(null)}
     >
@@ -151,10 +140,7 @@ export const ComponenteServicios = () => {
     </button>
   </div>
 </div>
-            )}
-          </div>
-        ))}
-      </section>
-    </>
+      )}
+    </div>
   );
 };
