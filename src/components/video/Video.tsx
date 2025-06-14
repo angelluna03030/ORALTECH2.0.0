@@ -240,7 +240,9 @@ export const Video = () => {
               preload="metadata"
               playsInline
               autoPlay={true}
-              muted={true} // Iniciamos mudo para permitir autoplay
+              //cambiar este al compilar
+              
+              muted={false} // Iniciamos mudo para permitir autoplay
               loop={false}
             />
             

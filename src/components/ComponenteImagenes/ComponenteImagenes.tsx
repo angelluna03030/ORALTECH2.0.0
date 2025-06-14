@@ -4,6 +4,7 @@ import { servicios } from "./index";
 import { useState } from "react";
 import placeholder from "../../assets/webp/placeholder.webp";
 import { GaleriaImagenes } from "../GaleriaSwiper/GaleriaMovimiento";
+import ImageneServicios from "@/assets/webp/Recurso 1@4x-8.webp"
 export const ComponenteServicios = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   // Función para cerrar el modal
@@ -18,9 +19,14 @@ export const ComponenteServicios = () => {
   return (
     <>
       <div className="text-center mb-28 px-4 w-full max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-semibold text-[#28295F] mb-2">
-          Nuestros Servicios
-        </h2>
+        <div className="flex justify-center w-full my-5">
+              <Image
+                src={ImageneServicios}
+                alt="Imagen de Servicios"
+                className="rounded-lg w-full h-auto object-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+                priority
+              />
+            </div>
       </div>
       <section
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10 px-4 max-w-7xl mx-auto"
