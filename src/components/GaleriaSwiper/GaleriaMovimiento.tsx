@@ -64,7 +64,7 @@ export const GaleriaImagenes: React.FC<GaleriaImagenesProps> = ({
                 width={400}
                 height={300}
                 loading="lazy"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 "
                 src={`${imagen}`}
                 alt={`Imagen ${index + 1} de la galería`}
                 title={`Imagen ${index + 1} de la galería`}
@@ -76,7 +76,7 @@ export const GaleriaImagenes: React.FC<GaleriaImagenesProps> = ({
         ))}
         
         {/* Botones de navegación personalizados */}
-        <div className="swiper-button-prev-custom absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110">
+        <div className="swiper-button-prev-custom absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 ">
           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>

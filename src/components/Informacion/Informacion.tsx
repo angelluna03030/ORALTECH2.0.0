@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { InformacionData } from "./index";
-import Imagenes1 from "@/assets/webp/Recurso 4@4x-8.webp";
+
 export const Informacion = () => {
   return (
     <section
@@ -11,23 +11,22 @@ export const Informacion = () => {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+        {/* Cambio principal: grid-cols-3 en todas las pantallas */}
+        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8">
           {InformacionData.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              {/* Image Container - Tamaño fijo para todas las imágenes */}
+              {/* Image Container - Responsive size */}
               <div className="flex justify-center">
-                              <div className={`relative ${stat.width || "w-64"} ${stat.height || "h-64"}`}>
-                      <Image
+                <div className={`relative ${stat.width || "w-32 sm:w-48 md:w-64"} ${stat.height || "h-32 sm:h-48 md:h-64"}`}>
+                  <Image
                     src={stat.src || "/placeholder.svg"}
                     alt={stat.alt}
                     fill
-                    className="object-contain filter drop-shadow-2xl "
+                    className="object-contain filter drop-shadow-2xl w-24"
                     loading="lazy"
                     decoding="async"
                   />
-                
                 </div>
-                  
               </div>
             </div>
           ))}

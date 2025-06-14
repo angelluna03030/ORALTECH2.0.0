@@ -10,9 +10,9 @@ export const InformacionData: StatItem[] = [
     titulo: "Información",
     descripcion: "Años de Experiencia",
     cantidad: 10,
-     suffix: "",
-     width : "w-52",
-     height : "h-52"
+    suffix: "",
+    width: "w-24 sm:w-52",
+    height: "h-24 sm:h-52",
   },
   {
     src: Imagenes2.src,
@@ -20,15 +20,14 @@ export const InformacionData: StatItem[] = [
     titulo: "Información",
     descripcion: " Servicios Realizados",
     cantidad: 13,
-         suffix: "K",
-        
+    suffix: "K",
   },
   {
     src: Imagenes1.src,
     alt: "Información sobre tratamientos dentales",
     titulo: "Información",
     descripcion: " Seguidores en Redes Sociales",
-         suffix: "K",
-    cantidad: 13 ,
+    suffix: "K",
+    cantidad: 13,
   },
 ];
