@@ -17,7 +17,7 @@ export const Transformacionsetion = () => {
               <span>Resultados comprobados</span>
             </div>
 
-            <div className="flex justify-center w-full my-5">
+            <div className="flex justify-center w-full my-7 pb-5">
               <Image
                 src={ImaganesTransformacion}
                 alt="Imagen de Tranformacion"

@@ -22,11 +22,12 @@ export default function Home() {
       <br />
     
       <ComponenteServicios></ComponenteServicios>
-      <p className="flex m-auto items-center justify-center mb-10 text-[#28295F] text-4xl md:text-5xl font-bold text-center w-full my-3">
+      <p className="flex m-auto items-center justify-center  text-[#28295F] text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-center w-full my-3">
         {" "}
         “Atención profesional, cómoda y segura”
       </p>
-      <div className="flex flex-col items-center justify-center py-40">
+      
+      <div className="flex flex-col items-center justify-center py-20">
         <DentalServices></DentalServices>
       </div>
 

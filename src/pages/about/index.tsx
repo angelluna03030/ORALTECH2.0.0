@@ -180,9 +180,7 @@ export default function About() {
       <Header />
       <section className="w-full bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Image Section */}
-
         <Video></Video>
-
         {/* Mission Section */}
         <div className="container mx-auto py-10 sm:py-12 md:py-16">
           <div className="text-center  max-w-4xl mx-auto">

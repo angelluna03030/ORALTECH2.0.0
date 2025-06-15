@@ -47,10 +47,10 @@ export const servicios: ComponenteImagenesProps[] = [
     descripcion:
       " El Microdiseño de sonrisa es un tratamiento de odontología estética conservadora, se realiza de forma rápida, sencilla y segura. Beneficios Mejora tu sonrisa de forma rápida y sencilla Procedimiento rápido y sin traumas No causa molestias ni dolor Sin desgaste dental Resultados muy naturales, porque el diseño se basa en la  forma del del diente del paciente No requiere anestesia local porque sólo actúa en la superficie del diente ",
     imagenes: [
-      "https://res.cloudinary.com/do8uezira/image/upload/v1749886793/WhatsApp_Image_2025-06-14_at_2.19.52_AM_k72f0a.jpg",
+      "https://res.cloudinary.com/do8uezira/image/upload/v1749941942/1.1_cl7dum.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749886793/WhatsApp_Image_2025-06-14_at_2.19.50_AM_4_ztdhpz.jpg",
-      "https://res.cloudinary.com/doza0twgj/image/upload/v1749782069/uploads/o3oabg2uoghqsimnqvct.jpg",
-      "https://res.cloudinary.com/do8uezira/image/upload/v1749886793/WhatsApp_Image_2025-06-14_at_2.20.03_AM_cdo5vz.jpg",
+      "https://res.cloudinary.com/do8uezira/image/upload/v1749941833/1_1_y8umcg.jpg",
+      "https://res.cloudinary.com/do8uezira/image/upload/v1749942030/3_1_rax9mc.jpg",
     ],
   },
   {
@@ -77,9 +77,9 @@ export const servicios: ComponenteImagenesProps[] = [
     imagenes: [
       "https://res.cloudinary.com/do8uezira/image/upload/v1749887456/WhatsApp_Image_2025-06-14_at_2.19.41_AM_jh537w.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749887457/WhatsApp_Image_2025-06-14_at_2.24.41_AM_2_xpzgsf.jpg",
-
+"https://res.cloudinary.com/do8uezira/image/upload/v1749943257/7338aeee377fcb93bfda758f11b5fd3c_earvqd.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749887456/WhatsApp_Image_2025-06-14_at_2.19.50_AM_1_sloqzk.jpg",
-      "https://res.cloudinary.com/do8uezira/image/upload/v1749887457/WhatsApp_Image_2025-06-14_at_2.24.41_AM_2_xpzgsf.jpg",
+      "https://res.cloudinary.com/do8uezira/image/upload/v1749943257/efb2b7ed91c7e325485dfda93d8a9a44_ef69vb.jpg",
     ],
   },
 ];
@@ -92,6 +92,7 @@ export const services: ComponenteImagenesProps[] = [
     descripcion: "Dientes más blancos y brillantes",
     alt: "Implante Dental",
     imagenes: [
+      "https://res.cloudinary.com/do8uezira/image/upload/v1749942030/3_1_rax9mc.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749888067/WhatsApp_Image_2025-06-14_at_2.59.51_AM_2_wr58sg.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749888071/WhatsApp_Image_2025-06-14_at_2.59.51_AM_1_rgy5hb.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749888067/WhatsApp_Image_2025-06-14_at_2.59.52_AM_2_sssqsn.jpg",
