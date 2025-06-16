@@ -18,15 +18,15 @@ export default function Home() {
   return (
     <div className="">
       <Header />
-      <Video/>
+      <Video />
       <br />
-    
+
       <ComponenteServicios></ComponenteServicios>
       <p className="flex m-auto items-center justify-center  text-[#28295F] text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-center w-full my-3">
         {" "}
         “Atención profesional, cómoda y segura”
       </p>
-      
+
       <div className="flex flex-col items-center justify-center py-20">
         <DentalServices></DentalServices>
       </div>
@@ -62,19 +62,26 @@ export default function Home() {
           className="w-full h-auto object-cover mt-20 cursor-pointer"
         />
       </section>
-      <Informacion/>
-      <Ubicacion/>
+
+      <Informacion />
+      
+      <Ubicacion />
+      
       <div className="flex flex-col items-center justify-center my-16">
-        <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA"/>
+        <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA" />
       </div>
+      
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
 
-      <TestimoniosSection/>
+      <TestimoniosSection />
+      
       <div className="flex flex-col items-center justify-center mb-10">
         <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA" />
       </div>
-      <WhatsAppWidget/>
-      <Footer/>
+      
+      <WhatsAppWidget />
+      
+      <Footer />
     </div>
   );
 }

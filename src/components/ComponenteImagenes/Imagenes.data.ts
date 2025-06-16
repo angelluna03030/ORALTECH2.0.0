@@ -58,7 +58,7 @@ export const servicios: ComponenteImagenesProps[] = [
     src: LimpiezaDental.src,
     alt: "Procedimiento profesional de limpieza dental",
     titulo: "Limpieza Dental",
-    descripcion: "Higiene profesional para una boca sana",
+    descripcion: "Limpieza dental:Tienes como objetivo primordial prevenir la aparición de la enfermedad periodontal en los adultos. Para conseguirlo, hay que eliminar la placa dental que se acumula alrededor de los dientes Beneficios: Previene las caries Evita el desarrollo de la enfermedad periodontal Fomenta hábitos de higiene oral adecuados Disminuye el riesgo de enfermedades graves Elimina las manchas dentales Controla el mal aliento Reduce la inversión en tratamientos dentales",
     imagenes: [
       "https://res.cloudinary.com/do8uezira/image/upload/v1749886792/WhatsApp_Image_2025-06-14_at_2.20.08_AM_by4dwn.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749886792/WhatsApp_Image_2025-06-14_at_2.20.02_AM_qyznsd.jpg",
@@ -72,8 +72,7 @@ export const servicios: ComponenteImagenesProps[] = [
     src: Blanquimineto.src,
     alt: "Procedimiento de blanqueamiento dental profesional",
     titulo: "Blanqueamiento",
-    descripcion:
-      " El blanqueamiento dental es un procedimiento de odontología estética que busca un aclaramiento mediante la eliminación de manchas dentales Beneficios: Elimina manchas dentales Una sonrisa más estética Una buena dosis de confianza Preserva la salud oral Es indoloro",
+    descripcion:"Es un procedimiento de odontología estética que busca un aclaramiento mediante la eliminación de manchas dentales Beneficios: Elimina manchas dentales Una sonrisa más estética Una buena dosis de confianza Preserva la salud oral Es indoloro",
     imagenes: [
       "https://res.cloudinary.com/do8uezira/image/upload/v1749887456/WhatsApp_Image_2025-06-14_at_2.19.41_AM_jh537w.jpg",
       "https://res.cloudinary.com/do8uezira/image/upload/v1749887457/WhatsApp_Image_2025-06-14_at_2.24.41_AM_2_xpzgsf.jpg",
@@ -89,7 +88,7 @@ export const services: ComponenteImagenesProps[] = [
     id: 6,
     titulo: "Implante Dental",
     src: ImplanteDentales.src,
-    descripcion: "Dientes más blancos y brillantes",
+    descripcion: "Es una solución para reemplazar dientes perdidos, que consiste en una pieza de titanio (o una aleación) que se coloca quirúrgicamente en el hueso maxilar, actuando como una raíz artificial. Este implante luego se integra con el hueso a través de un proceso llamado osteointegración, y sobre él se puede colocar una corona dental para simular un diente natural.",
     alt: "Implante Dental",
     imagenes: [
       "https://res.cloudinary.com/do8uezira/image/upload/v1749942030/3_1_rax9mc.jpg",
@@ -102,7 +101,7 @@ export const services: ComponenteImagenesProps[] = [
     id: 7,
     titulo: "Endodoncia",
     src: Endodoncia.src,
-    descripcion: "Dientes más blancos y brillantes",
+    descripcion: "Es el tratamiento más efectivo para eliminar el daño profundo de un diente que precisa algo más que un simple empaste para su recuperación Con esta técnica eliminamosel tejido dental inflamado o infectado, permitiendonos restaurar la pieza dañada, respetando su estética y devolvién dole su función habitual",
     alt: "Implante Dental",
     imagenes: [
       "https://res.cloudinary.com/doza0twgj/image/upload/v1749782069/uploads/p528j3ntzuorxlcfkmqr.jpg",
@@ -115,7 +114,7 @@ export const services: ComponenteImagenesProps[] = [
     id: 9,
     titulo: "Incrustación Dental",
     src: IncrustaciónDental.src,
-    descripcion: "Dientes más blancos y brillantes",
+    descripcion: "Es una prótesis dental para la restauración parcial de un diente con daño en las cúspides dentales puntas o relieves superiores y en el resto de la superficie con la que se mastica Con esta reconstrucción de la parte superior del diente, que se emplea sobre todo en las piezas molares y premolares, de vuleve a la pieza dañada tanto su funcionalidad como su estética. Además, se avitan posibles fracturas en el futuro",
     alt: "Implante Dental",
     imagenes: [
       "https://res.cloudinary.com/do8uezira/image/upload/v1749888067/WhatsApp_Image_2025-06-14_at_2.59.52_AM_2_sssqsn.jpg",
