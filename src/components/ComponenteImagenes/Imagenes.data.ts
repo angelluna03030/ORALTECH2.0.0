@@ -11,7 +11,7 @@ import CalzaDental from "@/assets/webp/CALZA_DENTAL_2.webp";
 export const servicios: ComponenteImagenesProps[] = [
   {
     id: 1,
-    src: DiseñoSonrisa.src,
+    src: "https://res.cloudinary.com/do8uezira/image/upload/v1750299766/Dise%C3%B1o_de_Sonrisa_hgdbas.webp",
     alt: "Diseño de Sonrisa",
     titulo: "Diseño de Sonrisa",
     descripcion:
@@ -26,7 +26,7 @@ export const servicios: ComponenteImagenesProps[] = [
   },
   {
     id: 2,
-    src: Ortodoncia.src,
+    src: "https://res.cloudinary.com/do8uezira/image/upload/v1750299766/Ortodoncia_lsodsq.webp",
     alt: "Tratamiento de ortodoncia con alineadores transparentes",
     titulo: "Ortodoncia",
     descripcion:
@@ -41,7 +41,7 @@ export const servicios: ComponenteImagenesProps[] = [
   },
   {
     id: 3,
-    src: MicroDiseño.src,
+    src: "https://res.cloudinary.com/do8uezira/image/upload/v1750299766/Microdise%C3%B1o_de_Sonrisa_samswn.webp",
     alt: "Microdiseño de Sonrisa con técnicas avanzadas",
     titulo: "Microdiseño de Sonrisa",
     descripcion:
@@ -55,7 +55,7 @@ export const servicios: ComponenteImagenesProps[] = [
   },
   {
     id: 4,
-    src: LimpiezaDental.src,
+    src: "https://res.cloudinary.com/do8uezira/image/upload/v1750299766/Limpieza_dental_dzf273.webp",
     alt: "Procedimiento profesional de limpieza dental",
     titulo: "Limpieza Dental",
     descripcion: "Limpieza dental:Tienes como objetivo primordial prevenir la aparición de la enfermedad periodontal en los adultos. Para conseguirlo, hay que eliminar la placa dental que se acumula alrededor de los dientes Beneficios: Previene las caries Evita el desarrollo de la enfermedad periodontal Fomenta hábitos de higiene oral adecuados Disminuye el riesgo de enfermedades graves Elimina las manchas dentales Controla el mal aliento Reduce la inversión en tratamientos dentales",
@@ -69,7 +69,7 @@ export const servicios: ComponenteImagenesProps[] = [
   },
   {
     id: 5,
-    src: Blanquimineto.src,
+    src: "https://res.cloudinary.com/do8uezira/image/upload/v1750299766/Blanqueamiento_lj1irs.webp",
     alt: "Procedimiento de blanqueamiento dental profesional",
     titulo: "Blanqueamiento",
     descripcion:"Es un procedimiento de odontología estética que busca un aclaramiento mediante la eliminación de manchas dentales Beneficios: Elimina manchas dentales Una sonrisa más estética Una buena dosis de confianza Preserva la salud oral Es indoloro",
