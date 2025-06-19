@@ -1,8 +1,3 @@
-import DiseñoSonrisa from "@/assets/webp/Diseño de Sonrisa.webp";
-import MicroDiseño from "@/assets/webp/Microdiseño de Sonrisa.webp";
-import Blanquimineto from "@/assets/webp/Blanqueamiento.webp";
-import LimpiezaDental from "@/assets/webp/Limpieza dental.webp";
-import Ortodoncia from "@/assets/webp/Ortodoncia.webp";
 import { ComponenteImagenesProps } from "@/utils/Interface/interface";
 import ImplanteDentales from "@/assets/webp/IMPLANTE_DENTAL_2.webp";
 import Endodoncia from "@/assets/webp/ENDODONCIA 1.webp";
