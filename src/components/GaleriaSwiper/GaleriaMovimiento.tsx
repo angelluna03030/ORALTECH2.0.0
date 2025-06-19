@@ -5,10 +5,9 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { GaleriaImagenesProps } from "@/utils/Interface/interface";
 
-interface GaleriaImagenesProps {
-  imagenes: string[] | undefined;
-}
+
 
 export const GaleriaImagenes: React.FC<GaleriaImagenesProps> = ({
   imagenes = [],

@@ -40,3 +40,6 @@ export interface StatItem {
   height?: string
   
 }
+export interface GaleriaImagenesProps {
+  imagenes: string[] | undefined;
+}
