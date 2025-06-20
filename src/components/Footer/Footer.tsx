@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/webp/oraltech_logo_white.webp";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -37,36 +38,36 @@ export const Footer = () => {
                 Enlaces Rápidos
               </h3>
               <div className="space-y-3">
-                <a
-                  href="#inicio"
+                <Link
+                  href="/"
                   className="block text-gray-300 hover:text-[#46BEF0] transition-colors duration-300 hover:translate-x-1 transform"
                 >
                   Inicio
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#servicios"
                   className="block text-gray-300 hover:text-[#46BEF0] transition-colors duration-300 hover:translate-x-1 transform"
                 >
                   Servicios
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#resultados"
                   className="block text-gray-300 hover:text-[#46BEF0] transition-colors duration-300 hover:translate-x-1 transform"
                 >
                   Resultados
-                </a>
-                <a
-                  href="#nosotros"
+                </Link>
+                <Link
+                  href="/about"
                   className="block text-gray-300 hover:text-[#46BEF0] transition-colors duration-300 hover:translate-x-1 transform"
                 >
                   Nosotros
-                </a>
-                <a
-                  href="#contacto"
+                </Link>
+                <Link
+                  href="/acount"
                   className="block text-gray-300 hover:text-[#46BEF0] transition-colors duration-300 hover:translate-x-1 transform"
                 >
                   Contacto
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -152,7 +153,7 @@ export const Footer = () => {
         <div className="border-t border-gray-700/50">
           <div className="container mx-auto px-4 py-6 md:py-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="text-sm md:text-base text-gray-400 text-center md:text-left">
+              <div className="text-xs sm:text-sm md:text-base text-gray-400 text-center md:text-left py-3 sm:py-3 md:py-5 px-3 sm:px-4 md:px-6">
                 <p>&copy; 2025 Oral Tech. Todos los derechos reservados.</p>
               </div>
               <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm text-gray-400">

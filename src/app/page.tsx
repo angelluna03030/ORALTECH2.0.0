@@ -46,7 +46,7 @@ export default function Home() {
         <div className=" justify-center">
           <Botones
             text="RESERVA TU CONSULTA"
-            url="/AGENDA TU CITA"
+            url="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita."
             className="w-full sm:w-auto text-sm sm:text-base max-w-xs"
           />
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
       <Ubicacion />
       
       <div className="flex flex-col items-center justify-center my-16">
-        <Botones text=" AGENDA TU CITA" url=" AGENDA TU CITA" />
+        <Botones text=" AGENDA TU CITA" url="https://wa.me/573016184618?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita." />
       </div>
       
       <hr className="bg-[#3CADBD] w-full absolute h-4 border-none z-10" />
@@ -76,7 +76,7 @@ export default function Home() {
       <TestimoniosSection />
       
       <div className="flex flex-col items-center justify-center mb-10">
-        <Botones text="TU SONRISA EMPIEZA AQUI" url=" AGENDA TU CITA" />
+        <Botones text="TU SONRISA EMPIEZA AQUI"   url="https://wa.me/573224130747?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita." />
       </div>
       
       <WhatsAppWidget />

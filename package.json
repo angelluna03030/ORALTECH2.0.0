@@ -1,7 +1,18 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "OralTech - Consultorio Odontológico",
+  "version": "3.0.0",
   "private": true,
+  "description": "Somos un consultorio odontológico en el que nos dedicamos a crear sonrisas radiantes que irradian confianza y belleza, buscamos hacer felices a nuestros pacientes ayudándolos a conseguir su sonrisa soñada. Contamos con los profesionales ideales para ayudar a nuestros pacientes a mantener su salud y estética bucal.",
+  "keywords": [
+    "nextjs",
+    "tailwindcss",
+    "react",
+    "web development"
+  ],
+  "author": "Angel Lluna",
+  "license": "MIT",
+
+
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

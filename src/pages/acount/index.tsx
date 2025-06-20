@@ -65,14 +65,14 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.oraltechodontologia.com/logo-1200x630.png", // CAMBIO CRÍTICO: URL absoluta
+        url: "https://www.oraltechodontologia.com/favicon.ico", // CAMBIO CRÍTICO: URL absoluta
         width: 1200,
         height: 630,
         alt: "OralTech - Consultorio Odontológico",
         type: "image/png",
       },
       {
-        url: "https://www.oraltechodontologia.com/logo-square.png", // Logo cuadrado adicional
+        url: "https://www.oraltechodontologia.com/favicon.ico", // Logo cuadrado adicional
         width: 512,
         height: 512,
         alt: "OralTech Logo",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     title: "OralTech - Consultorio Odontológico",
     description:
       "Consultorio odontológico especializado en crear sonrisas radiantes. Profesionales en salud y estética bucal.",
-    images: ["https://www.oraltechodontologia.com/logo-1200x630.png"], // URL absoluta
+    images: ["https://www.oraltechodontologia.com/favicon.ico"], // URL absoluta
     site: "@OralTech",
     creator: "@AngelLuna",
   },
@@ -186,11 +186,11 @@ export const metadata: Metadata = {
       "name": "OralTech",
       "alternateName": "OralTech Consultorio Odontológico",
       "url": "https://www.oraltechodontologia.com",
-      "logo": "https://www.oraltechodontologia.com/logo-512x512.png",
-      "image": "https://www.oraltechodontologia.com/logo-1200x630.png",
+      "logo": "https://www.oraltechodontologia.com/favicon.ico",
+      "image": "https://www.oraltechodontologia.com/favicon.ico",
       "description": "Consultorio odontológico especializado en crear sonrisas radiantes que irradian confianza y belleza.",
-      "telephone": "+57-300-123-4567", // Reemplaza con tu número real
-      "email": "info@oraltechodontologia.com", // Reemplaza con tu email real
+      "telephone": "+573224130747", // Reemplaza con tu número real
+      "email": "Ooraltech@gmail.com", // Reemplaza con tu email real
       "address": [
         {
           "@type": "PostalAddress",
