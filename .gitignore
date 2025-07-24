@@ -44,4 +44,9 @@ next-env.d.ts
 .vercel
 
 package-lock.json
+<<<<<<< HEAD
 mejorarSEO.txt
+=======
+mejorarSEO.txt
+.vercel
+>>>>>>> regalo
