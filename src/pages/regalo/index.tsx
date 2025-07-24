@@ -222,7 +222,7 @@ const GiftCard: React.FC<GiftCardProps> = ({
     <div className="text-sm flex justify-between items-center mt-2">
       <span className="text-gray-500">Fecha:</span>
 <span className="block text-sm font-medium text-gray-700 text-center">
-  23/7/2025 · 10:00 A.M.
+  24/7/2025 · 10:00 A.M.
 </span>
     </div>
   </div>
